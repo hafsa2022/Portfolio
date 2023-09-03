@@ -4,6 +4,7 @@ import AboutMeview from "../views/AboutMeView.vue";
 import MyProjectsView from "../views/MyProjectsView.vue";
 import MyActivitiesView from "../views/MyActivitiesView.vue";
 import ContactMeView from "../views/ContactMeView.vue";
+import MyCertificatesView from "../views/MyCertificatesView.vue";
 
 const routes = [
   {
@@ -25,6 +26,11 @@ const routes = [
     path: "/myactivities",
     name: "myactivities",
     component: MyActivitiesView,
+  },
+  {
+    path: "/mycertificates",
+    name: "mycertificates",
+    component: MyCertificatesView,
   },
   {
     path: "/contact",

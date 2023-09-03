@@ -1,17 +1,18 @@
 <template>
-  <v-container class="containerMax mb-4 mt-4"
+  <v-container class="containerMax mb-4 mt-10"
     ><div class="mt-4">
       <v-row
-        ><v-col cols="4">
-          <div class="mt-16 pt-16">
+        ><v-col lg="4" md="6" sm="6" xs="12">
+          <div class="mt-16 pt-16 image-container">
             <v-img
+              class="animated-image"
               max-width="500"
               max-height="500"
               src="../assets/CP_hafsa.png"
             >
             </v-img>
           </div>
-          <div class="mt-4">
+          <div class="mt-2">
             <h2><v-icon color="green">mdi-account</v-icon> Hafsa El Akhdar</h2>
             <h2><v-icon color="green">mdi-calendar</v-icon> June 24, 2000</h2>
             <h2>
@@ -22,90 +23,168 @@
             </h2>
           </div>
         </v-col>
-        <v-col cols="8">
+        <v-col lg="8" md="12" sm="12" xs="12">
           <div class="mt-16">
             <!-- <h1 style="font-weight: 600"></h1> -->
-            <v-card elevation="2" class="mt-2 ml-2 bg-success">
+            <v-card elevation="0" class="mt-4 ml-2 my-card-decoration">
               <template v-slot:title
-                ><span style="font-size: 35px"> Who I am ? </span></template
+                ><span style="font-size: 35px" class="text-green">
+                  Who I am ?
+                </span></template
               >
-              <v-card-text class="text-h6">
-                Hello ,<br />
-                My name is Hafsa El Akhdar and I am a dynamic Geoinformation
-                engineer, freshly graduated from the Faculty of Science and
-                Technology of Tangier. During my training and my end-of-studies
-                project at Petalens, I acquired solid technical knowledge and
-                skills that made me passionate about the field of
-                development.</v-card-text
-              >
+              <v-card-text class="text-h5 my-card-text">
+                <strong>Hello there</strong> ,<br />
+                My name is <strong>Hafsa El Akhdar</strong>, I'm a 6-month
+                experienced <strong>Software Engineer</strong> who enjoys
+                learning new technologies.<br />
+                In this duration, I have learned a lot of technologies for
+                example collecting data using Python, creating user interfaces
+                using Vue.js and Vuetify, connecting to database PostgreSQL and
+                SQLserver, and developing the apis using Laravel. <br />
+                So I'm always seeking to have an opportunity that matches my
+                skills, to make the best use of all that I have learned.
+              </v-card-text>
             </v-card>
-            <v-card elevation="2" class="mt-2 ml-2 bg-success">
+            <v-card elevation="0" class="mt-12 ml-2 my-card-decoration">
               <template v-slot:title>
-                <span style="font-size: 35px">Education ? </span></template
+                <span style="font-size: 35px" class="text-green"
+                  >Education ?
+                </span></template
               >
-              <v-card-text class="text-h6">
-                Hello ,<br />
-                My name is Hafsa El Akhdar and I am a dynamic Geoinformation
-                engineer, freshly graduated from the Faculty of Science and
-                Technology of Tangier. During my training and my end-of-studies
-                project at Petalens, I acquired solid technical knowledge and
-                skills that made me passionate about the field of
-                development.</v-card-text
+              <v-card-text class="text-h5 my-card-text">
+                I am a freshly graduated engineer from the Faculty of Science
+                and Technology of Tangier in
+                <strong>Geoinormation</strong>.</v-card-text
               >
             </v-card>
-            <v-card elevation="2" class="mt-2 ml-2 bg-success">
+            <v-card elevation="0" class="mt-12 ml-2 my-card-decoration">
               <template v-slot:title>
-                <span style="font-size: 35px">Education ? </span></template
+                <span style="font-size: 35px" class="text-green"
+                  >Certificates ?
+                </span></template
               >
-              <v-card-text class="text-h6">
-                Hello ,<br />
-                My name is Hafsa El Akhdar and I am a dynamic Geoinformation
-                engineer, freshly graduated from the Faculty of Science and
-                Technology of Tangier. During my training and my end-of-studies
-                project at Petalens, I acquired solid technical knowledge and
-                skills that made me passionate about the field of
-                development.</v-card-text
-              >
+              <v-card-text class="text-h5 my-card-text">
+                <v-list lines="two">
+                  <v-list-item title="Certified first aid ."></v-list-item>
+                </v-list>
+              </v-card-text>
             </v-card>
-            <v-card elevation="2" class="mt-2 ml-2 bg-success">
+            <v-card elevation="0" class="mt-12 ml-2">
               <template v-slot:title>
-                <span style="font-size: 35px">Education ? </span>
-              </template>
-              <v-card-text class="text-h6">
-                Hello ,<br />
-                My name is Hafsa El Akhdar and I am a dynamic Geoinformation
-                engineer, freshly graduated from the Faculty of Science and
-                Technology of Tangier. During my training and my end-of-studies
-                project at Petalens, I acquired solid technical knowledge and
-                skills that made me passionate about the field of
-                development.</v-card-text
+                <span style="font-size: 35px" class="text-green"
+                  >My Skills ?
+                </span></template
               >
-            </v-card>
-            <v-card elevation="2" class="mt-2 ml-2 bg-success">
-              <template v-slot:title> Education ? </template>
-              <v-card-text class="text-h6">
-                Hello ,<br />
-                My name is Hafsa El Akhdar and I am a dynamic Geoinformation
-                engineer, freshly graduated from the Faculty of Science and
-                Technology of Tangier. During my training and my end-of-studies
-                project at Petalens, I acquired solid technical knowledge and
-                skills that made me passionate about the field of
-                development.</v-card-text
-              >
-            </v-card>
-          </div></v-col
-        ></v-row
-      >
+              <v-card-text class="text-h6"
+                ><v-row
+                  ><SkillCard
+                    v-for="skill in skills"
+                    :key="skill.id"
+                    :skill="skill"
+                /></v-row>
+              </v-card-text>
+            </v-card></div></v-col
+      ></v-row>
     </div>
   </v-container>
 </template>
 
 <script>
-export default {};
+import SkillCard from "../components/SkillCard.vue";
+export default {
+  name: "AboutView",
+  data() {
+    return {
+      skills: [
+        {
+          id: 1,
+          skillName: "HTML",
+          skillIcon: require("../assets/html.png"),
+        },
+        {
+          id: 2,
+          skillName: "CSS",
+          skillIcon: require("../assets/css.png"),
+        },
+        {
+          id: 3,
+          skillName: "Bootstrap",
+          skillIcon: require("../assets/bootstrap.png"),
+        },
+        {
+          id: 3,
+          skillName: "JS",
+          skillIcon: require("../assets/js.png"),
+        },
+        {
+          id: 4,
+          skillName: "Vuejs",
+          skillIcon: require("../assets/vuejs.png"),
+        },
+        {
+          id: 5,
+          skillName: "Vuex",
+          skillIcon: require("../assets/vuex.png"),
+        },
+        {
+          id: 6,
+          skillName: "Vuetify",
+          skillIcon: require("../assets/vuetify.png"),
+        },
+        {
+          id: 7,
+          skillName: "Php",
+          skillIcon: require("../assets/php.png"),
+        },
+        {
+          id: 8,
+          skillName: "PostgreSQL",
+          skillIcon: require("../assets/postgresql.png"),
+        },
+        {
+          id: 9,
+          skillName: "Python",
+          skillIcon: require("../assets/python.png"),
+        },
+        {
+          id: 10,
+          skillName: "C",
+          skillIcon: require("../assets/c.png"),
+        },
+        {
+          id: 11,
+          skillName: "Laravel",
+          skillIcon: require("../assets/laravel.png"),
+        },
+        {
+          id: 12,
+          skillName: "Google Maps",
+          skillIcon: require("../assets/laravel.png"),
+        },
+      ],
+    };
+  },
+  components: { SkillCard },
+};
 </script>
 
 <style scoped>
 .containerMax {
   max-width: 2000px !important;
+}
+.my-card-text {
+  line-height: 1.5;
+}
+.animated-image {
+  transition: transform 1s ease-in-out;
+}
+
+.image-container:hover .animated-image {
+  transform: scale(1.1);
+}
+.my-card-decoration:hover {
+  /* background-color: black;
+  color: white; */
+  box-shadow: 5px 5px 10px #888888;
 }
 </style>

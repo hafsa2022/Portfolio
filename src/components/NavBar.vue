@@ -48,6 +48,16 @@
       <template v-slot:prepend> <v-icon color="success"></v-icon> </template>My
       Activities</v-btn
     >
+    <!-- <v-btn
+      rounded="lg"
+      size="x-large"
+      prepend-icon="mdi-account-group"
+      to="/mycertificates"
+      class="text-h6 button"
+    >
+      <template v-slot:prepend> <v-icon color="success"></v-icon> </template>My
+      Certifications</v-btn
+    > -->
     <v-btn
       rounded="lg"
       size="x-large"
