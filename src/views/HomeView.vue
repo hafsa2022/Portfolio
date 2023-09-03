@@ -5,38 +5,46 @@
         <v-col cols="5" class=""
           ><div
             style="position: relative; padding-left: 100px"
-            class="mt-16 pt-16"
+            class="mt-16 pt-16 text-left"
           >
-            <h1 class="text-grey text-h4 mt-10" style="font-weight: 600">
+            <h1
+              class="text-grey text-h4 mt-10 my-text"
+              style="font-weight: 600;line-height 1.7"
+            >
               Hello,
             </h1>
-            <h1 class="text-white text-h2 mt-4" style="font-weight: 600">
+            <h1
+              class="text-white text-h2 my-text"
+              style="font-weight: 600;line-height 1.7"
+            >
               I'M HAFSA EL AKHDAR
             </h1>
             <span
-              class="text-grey text-h4"
+              class="text-grey text-h4 my-text"
               style="font-weight: 600; margin-top: 20px"
               >SoftWare Enginner & Full Stack Developper</span
             ><br />
-            <v-btn
-              tile
-              dark
-              class="text-green mt-6 btn-style"
-              variant="outlined"
-              height="72"
-              min-width="200"
-              >Download CV</v-btn
-            >
-            <v-btn
-              tile
-              dark
-              class="text-green mt-6 ml-4 btn-style"
-              variant="outlined"
-              height="72"
-              min-width="200"
-              >Contact Me</v-btn
-            >
-            <div class="mt-10 icon-container">
+            <div class="text-center">
+              <v-btn
+                tile
+                dark
+                class="text-green mt-6 btn-style"
+                variant="outlined"
+                height="72"
+                min-width="200"
+                >Download CV</v-btn
+              >
+              <v-btn
+                tile
+                dark
+                class="text-green mt-6 ml-4 btn-style"
+                variant="outlined"
+                height="72"
+                min-width="200"
+                >Contact Me</v-btn
+              >
+            </div>
+            <div class="mt-10 icon-container text-center">
               <v-icon class="social-icon" color="white lighten-1"
                 >mdi-instagram</v-icon
               >
@@ -126,5 +134,8 @@ export default {
 
 .image-container:hover .animated-image {
   transform: scale(1.2);
+}
+.my-text {
+  line-height: 1.5;
 }
 </style>

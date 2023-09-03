@@ -1,44 +1,28 @@
 <template>
   <v-container class="containerMax mb-4 mt-4"
-    ><div class="mt-4">
-      <v-row>
-        <v-col cols="12">
-          <div>
-            <h1>
-              <v-icon color="green lighten-1" class="mr-2">mdi-laptop</v-icon>My
-              Projects
-            </h1>
-          </div></v-col
-        ></v-row
-      >
-      <v-row>
-        <v-col cols="3">
-          <div>
-            <v-card>hloo</v-card>
-          </div></v-col
-        >
-        <v-col cols="3">
-          <div>
-            <v-card>hloo</v-card>
-          </div></v-col
-        >
-        <v-col cols="3">
-          <div>
-            <v-card>hloo</v-card>
-          </div></v-col
-        >
-        <v-col cols="3">
-          <div>
-            <v-card>hloo</v-card>
-          </div></v-col
-        ></v-row
-      >
-    </div></v-container
-  >
+    ><div class="mt-4 pa-8 text-center">
+      <v-row justify="center">
+        <Card v-for="project in projects" :key="project.id" :project="project"
+      /></v-row></div
+  ></v-container>
 </template>
 
 <script>
-export default {};
+import Card from "../components/Card.vue";
+export default {
+  name: "MyProjectsView",
+  data() {
+    return {
+      // projects: [],
+    };
+  },
+  components: { Card },
+  computed: {
+    projects() {
+      return this.$store.state.projects;
+    },
+  },
+};
 </script>
 
 <style scoped>
