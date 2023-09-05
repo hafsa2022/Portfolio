@@ -1,10 +1,10 @@
 <template>
-  <v-col lg="2" md="4" sm="12" xs="12">
+  <v-col lg="3" md="4" sm="12" xs="12">
     <div class="text-center">
       <v-card
         class="rounded-lg card-decoration"
         elevation="3"
-        width="200"
+        width="230"
         height="95"
       >
         <v-card-title>

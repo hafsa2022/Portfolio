@@ -7,7 +7,7 @@
           height="300"
           :src="activity.activityImg"
           class="img-decoration"
-        /><v-card-title class="text-center mt-4">{{
+        /><v-card-title class="text-center mt-4 text-wrap" width="200">{{
           activity.activityName
         }}</v-card-title></v-card
       >
@@ -26,6 +26,9 @@ export default {
 };
 </script>
 <style>
+.text-wrap {
+  white-space: pre-wrap;
+}
 .img-decoration {
   transition: transform 1s ease-in-out;
 }

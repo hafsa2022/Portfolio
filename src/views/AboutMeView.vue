@@ -1,18 +1,18 @@
 <template>
   <v-container class="containerMax mb-4 mt-10"
     ><div class="mt-4">
-      <v-row
-        ><v-col lg="4" md="6" sm="6" xs="12">
-          <div class="mt-16 pt-16 image-container">
+      <v-row>
+        <v-col lg="5" md="6" sm="6" xs="12" class="">
+          <div class="mt-16 pt-16 image-container text-center">
             <v-img
-              class="animated-image"
-              max-width="500"
-              max-height="500"
+              class="animated-image mx-auto"
+              max-width="450"
+              max-height="450"
               src="../assets/CP_hafsa.png"
             >
             </v-img>
           </div>
-          <div class="mt-2">
+          <div class="mt-4 ml-4">
             <h2><v-icon color="green">mdi-account</v-icon> Hafsa El Akhdar</h2>
             <h2><v-icon color="green">mdi-calendar</v-icon> June 24, 2000</h2>
             <h2>
@@ -23,7 +23,7 @@
             </h2>
           </div>
         </v-col>
-        <v-col lg="8" md="12" sm="12" xs="12">
+        <v-col lg="7" md="12" sm="12" xs="12">
           <div class="mt-16">
             <!-- <h1 style="font-weight: 600"></h1> -->
             <v-card elevation="0" class="mt-4 ml-2 my-card-decoration">
@@ -65,7 +65,7 @@
               >
               <v-card-text class="text-h5 my-card-text">
                 <v-list lines="two">
-                  <v-list-item title="Certified first aid ."></v-list-item>
+                  <v-list-item title=""> Certified first aid .</v-list-item>
                 </v-list>
               </v-card-text>
             </v-card>
@@ -159,7 +159,7 @@ export default {
         {
           id: 12,
           skillName: "Google Maps",
-          skillIcon: require("../assets/laravel.png"),
+          skillIcon: require("../assets/google maps.png"),
         },
       ],
     };
@@ -170,7 +170,9 @@ export default {
 
 <style scoped>
 .containerMax {
-  max-width: 2000px !important;
+  max-width: 1900px !important;
+  transform: translateX(-20px);
+  transition: transform 3s;
 }
 .my-card-text {
   line-height: 1.5;
