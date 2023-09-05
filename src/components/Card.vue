@@ -4,12 +4,12 @@
       <v-card class="rounded-lg" elevation="3" width="500" height="450">
         <img
           :src="project.projectImg"
-          width="450"
+          width="500"
           height="300"
-          class="pt-4 img-decoration"
+          class="img-decoration"
         />
-        <v-card-title>{{ project.projectName }}</v-card-title>
-        <v-card-actions>
+        <v-card-title class="text-wrap">{{ project.projectName }}</v-card-title>
+        <v-card-actions class="mx-auto">
           <v-row class="mt-4"
             ><v-col>
               <a :href="project.projectUrl" target="_blank">
@@ -47,6 +47,9 @@ export default {
 };
 </script>
 <style>
+.text-wrap {
+  white-space: pre-wrap;
+}
 .img-decoration {
   transition: transform 1s ease-in-out;
 }

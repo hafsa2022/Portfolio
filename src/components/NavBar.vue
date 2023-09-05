@@ -1,5 +1,5 @@
 <template>
-  <v-app-bar app color="black" elevation="0" class="pa-4">
+  <v-app-bar elevate-on-scroll app color="black" elevation="0" class="pa-4">
     <v-toolbar-title class="logo"
       ><span style="font-size: 35px; font-weight: 600"
         ><b style="color: #32cd32">M</b>y

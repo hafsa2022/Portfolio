@@ -2,7 +2,7 @@
   <v-container class="containerMax mb-4 mt-4">
     <div class="head">
       <v-row class="bg-black">
-        <v-col cols="5" class=""
+        <v-col cols="6" class=""
           ><div
             style="position: relative; padding-left: 100px"
             class="mt-16 pt-16 text-left"
@@ -14,26 +14,35 @@
               Hello,
             </h1>
             <h1
-              class="text-white text-h2 my-text"
+              class="text-white text-h2 my-text my-text-animation"
               style="font-weight: 600;line-height 1.7"
             >
               I'M HAFSA EL AKHDAR
             </h1>
+
             <span
-              class="text-grey text-h4 my-text"
+              class="text-grey text-h4 my-text animated-text"
               style="font-weight: 600; margin-top: 20px"
-              >SoftWare Enginner & Full Stack Developper</span
-            ><br />
+              >SoftWare Enginner & Full Stack Developper!</span
+            >
+
+            <br />
             <div class="text-center">
-              <v-btn
-                tile
-                dark
-                class="text-green mt-6 btn-style"
-                variant="outlined"
-                height="72"
-                min-width="200"
-                >Download CV</v-btn
+              <a
+                href="https://drive.google.com/file/d/16tARTAwK6nJZZDtwqbEpXt8NGO_g0ku9/view?usp=sharing"
+                download="download.pdf"
               >
+                <v-btn
+                  tile
+                  dark
+                  class="text-green mt-6 btn-style"
+                  variant="outlined"
+                  height="72"
+                  min-width="200"
+                  >Download CV</v-btn
+                >
+              </a>
+
               <v-btn
                 tile
                 dark
@@ -41,6 +50,7 @@
                 variant="outlined"
                 height="72"
                 min-width="200"
+                to="/contact"
                 >Contact Me</v-btn
               >
             </div>
@@ -48,16 +58,21 @@
               <v-icon class="social-icon" color="white lighten-1"
                 >mdi-instagram</v-icon
               >
-              <v-icon class="social-icon" color="white lighten-1"
-                >mdi-linkedin</v-icon
+              <a href="https://www.linkedin.com/in/hafsa-el-akhdar-92b446198">
+                <v-icon class="social-icon" color="white lighten-1"
+                  >mdi-linkedin</v-icon
+                ></a
               >
-              <v-icon class="social-icon" color="white lighten-1"
-                >mdi-github</v-icon
+
+              <a href="https://github.com/hafsa2022">
+                <v-icon class="social-icon" color="white lighten-1"
+                  >mdi-github</v-icon
+                ></a
               >
             </div>
           </div></v-col
         >
-        <v-col cols="2" class=""> </v-col>
+        <v-col cols="1" class=""> </v-col>
         <v-col cols="5" class="">
           <div
             style="position: relative; z-index: 9999"
@@ -68,7 +83,7 @@
               contain
               max-height="500"
               width="500"
-              src="../assets/CP_hafsa.png"
+              src="@/assets/CP_hafsa.png"
             ></v-img>
           </div>
         </v-col>
@@ -80,7 +95,11 @@
 <script>
 export default {
   name: "HomeView",
+  data() {
+    return {};
+  },
   components: {},
+  methods: {},
 };
 </script>
 <style scoped>
@@ -138,4 +157,33 @@ export default {
 .my-text {
   line-height: 1.5;
 }
+.my-text-animation {
+  animation: mynameanimation 8s ease-in-out 1s infinite alternate;
+}
+@keyframes mynameanimation {
+  0% {
+    opacity: 0;
+    transform: translateX(-20px);
+    transition: opacity 1s, transform 1s;
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+/* 
+.animated-text {
+  animation: myanimation 4s linear 2s infinite alternate;
+}
+@keyframes myanimation {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 1s, transform 1s;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+} */
 </style>

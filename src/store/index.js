@@ -2,9 +2,14 @@ import { createStore } from "vuex";
 
 export default createStore({
   state: {
+    snackbar: {
+      color: "",
+      text: "",
+      show: false,
+    },
     projects: [
       {
-        projectUrl: "",
+        projectUrl: "https://hafsa2022.github.io/",
         projectName: " My Portfolio using VUE.JS, VUETIFY and VUEX ",
         projectGithub: "https://github.com/hafsa2022/Portfolio",
         projectImg: require("../assets/portfolio_home.png"),
@@ -41,27 +46,29 @@ export default createStore({
     ],
     activities: [
       {
-        activityName: "Meeting with members",
+        activityName: "Meeting with members of Club Together We Can",
         activityImg: require("../assets/meeting_img.jpeg"),
         id: 1,
       },
       {
-        activityName: " Play basketball ",
+        activityName: " Playing Basketball ",
         activityImg: require("../assets/basketball_img.jpeg"),
         id: 2,
       },
       {
-        activityName: " Best Speaker ",
+        activityName: " Best Speaker Competition",
         activityImg: require("../assets/best_speaker.jpeg"),
         id: 3,
       },
       {
-        activityName: " Chefchaouen ",
+        activityName:
+          " A humanitarian convoy to the outskirts of the city of Chefchaouen ",
         activityImg: require("../assets/chefchaoun.jpeg"),
         id: 4,
       },
       {
-        activityName: " english ",
+        activityName:
+          " Seminar Program : Innovative Teaching Practices : Methods & Challenges ",
         activityImg: require("../assets/english_img.jpeg"),
         id: 5,
       },
@@ -88,7 +95,17 @@ export default createStore({
     ],
   },
   getters: {},
-  mutations: {},
-  actions: {},
+  mutations: {
+    SET_SNACKBAR(state, payload) {
+      state.snackbar.color = payload.color;
+      state.snackbar.text = payload.text;
+      state.snackbar.show = payload.show;
+    },
+  },
+  actions: {
+    setSnackBar({ commit }, payload) {
+      commit("SET_SNACKBAR", payload);
+    },
+  },
   modules: {},
 });
