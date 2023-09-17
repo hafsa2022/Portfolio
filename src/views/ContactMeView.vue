@@ -1,12 +1,9 @@
 <template>
   <v-container class="containerMax mb-16 pb-8">
-    <div style="margin-top: 180px">
-      <v-card width="1000" height="650" class="mt-12 mx-auto" elevation="0">
-        <v-card-title class="mb-2 text-green mb-8" style="font-size: 35px"
-          >Contact Me</v-card-title
-        >
+    <div style="margin-top: 200px">
+      <v-card width="1000" class="mt-12 mx-auto" elevation="0">
         <v-dialog v-model="loading" hide-overlay persistent width="300">
-          <v-card color="green" dark>
+          <v-card color="#09ee90" dark>
             <v-card-text>
               Sending email .....
               <v-progress-linear
@@ -19,54 +16,93 @@
         </v-dialog>
 
         <v-card-text>
-          <v-row>
-            <v-col cols="12">
-              <v-text-field
-                v-model="fullName"
-                variant="outlined"
-                label="Full Name"
-                :rules="[rules.required]"
-              ></v-text-field>
-            </v-col>
-          </v-row>
-          <v-row>
-            <v-col cols="12">
-              <v-text-field
-                variant="outlined"
-                v-model="emailAddress"
-                label="Email"
-                hint="example@gmail.com"
-                :rules="[rules.required, rules.email]"
-              ></v-text-field>
-            </v-col>
-          </v-row>
-          <v-row>
-            <v-col cols="12">
-              <v-text-field
-                v-model="phoneNumber"
-                variant="outlined"
-                label="Phone Number"
-                maxlength="15"
-                :rules="[rules.number, rules.required]"
-              ></v-text-field>
-            </v-col>
-          </v-row>
-          <v-row>
-            <v-col cols="12">
-              <v-textarea
-                v-model="message"
-                label="Message"
-                variant="outlined"
-              ></v-textarea>
-            </v-col>
-          </v-row>
-          <v-col cols="12">
-            <v-card-actions class="justify-center">
-              <v-btn color="green" size="x-large" @click="sendEmail">
-                Send
-              </v-btn>
-            </v-card-actions>
-          </v-col>
+          <v-row
+            ><v-col lg="6" md="12" sm="12" xsm="12">
+              <v-card class="pa-3" elevation="4">
+                <v-card-title
+                  class="mb-2 span-decoration mb-8"
+                  style="font-size: 35px; color: #09ee90"
+                  >Contact Me</v-card-title
+                >
+                <div class="text-center">
+                  <v-icon class="social-icon" color="#09ee90">
+                    mdi-map-marker-circle</v-icon
+                  >
+                  <h3 class="mb-12">Tangier, Morocco</h3>
+                </div>
+                <div class="text-center">
+                  <v-icon class="social-icon" color="#09ee90">
+                    mdi-phone</v-icon
+                  >
+                  <h3 class="mb-12">0650840950</h3>
+                </div>
+                <div class="text-center">
+                  <v-icon class="social-icon" color="#09ee90">
+                    mdi-email</v-icon
+                  >
+                  <h3 class="mb-16">h.hafsaelakhdar@gmail.com</h3>
+                </div>
+              </v-card></v-col
+            ><v-col lg="6" md="12" sm="12" xsm="12">
+              <v-card class="" elevation="0"
+                ><v-row>
+                  <v-col cols="12">
+                    <v-text-field
+                      v-model="fullName"
+                      variant="outlined"
+                      label="Full Name"
+                      :rules="[rules.required]"
+                    ></v-text-field>
+                  </v-col>
+                </v-row>
+                <v-row>
+                  <v-col cols="12">
+                    <v-text-field
+                      variant="outlined"
+                      v-model="emailAddress"
+                      label="Email"
+                      hint="example@gmail.com"
+                      :rules="[rules.required, rules.email]"
+                    ></v-text-field>
+                  </v-col>
+                </v-row>
+                <v-row>
+                  <v-col cols="12">
+                    <v-text-field
+                      v-model="phoneNumber"
+                      variant="outlined"
+                      label="Phone Number"
+                      maxlength="15"
+                      :rules="[rules.number, rules.required]"
+                    ></v-text-field>
+                  </v-col>
+                </v-row>
+                <v-row>
+                  <v-col cols="12">
+                    <v-textarea
+                      v-model="message"
+                      label="Message"
+                      variant="outlined"
+                    ></v-textarea>
+                  </v-col>
+                  <v-col cols="12">
+                    <v-card elevation="0">
+                      <v-card-actions class="justify-center">
+                        <v-btn
+                          color="white"
+                          style="background-color: #09ee90"
+                          size="x-large"
+                          @click="sendEmail"
+                        >
+                          Send
+                        </v-btn>
+                      </v-card-actions></v-card
+                    >
+                  </v-col></v-row
+                ></v-card
+              ></v-col
+            ></v-row
+          >
         </v-card-text>
       </v-card>
       <div>
@@ -76,7 +112,7 @@
             <v-btn
               color="white"
               text
-              class="primary--text"
+              class=""
               v-bind="attrs"
               @click="closeSnackbar"
             >
@@ -128,40 +164,47 @@ export default {
       });
     },
     sendEmail() {
-      this.loading = true;
-      // Initialize Email.js with your user ID
-      emailjs.init("1yEO3neNo8eQUxxZG");
+      if (
+        this.phoneNumber != "" &&
+        this.emailAddress != "" &&
+        this.fullName != "" &&
+        this.message != ""
+      ) {
+        this.loading = true;
+        // Initialize Email.js with your user ID
+        emailjs.init("1yEO3neNo8eQUxxZG");
 
-      // Use Email.js to send the email
-      emailjs
-        .send("service_tfbjdfe", "template_0hcpvys", {
-          user_name: this.fullName,
-          user_email: this.emailAddress,
-          message: this.message,
-          user_phoneNumber: this.phoneNumber,
-        })
-        .then((response) => {
-          // this.fullName = "";
-          // this.emailAddress = "";
-          // this.message = "";
-          // this.phoneNumber = 0;
-          this.loading = false;
-          this.$store.dispatch("setSnackBar", {
-            color: "success lighten-1",
-            text: "email was sended successfully!",
-            show: true,
+        // Use Email.js to send the email
+        emailjs
+          .send("service_tfbjdfe", "template_0hcpvys", {
+            user_name: this.fullName,
+            user_email: this.emailAddress,
+            message: this.message,
+            user_phoneNumber: this.phoneNumber,
+          })
+          .then((response) => {
+            // this.fullName = "";
+            // this.emailAddress = "";
+            // this.message = "";
+            // this.phoneNumber = 0;
+            this.loading = false;
+            this.$store.dispatch("setSnackBar", {
+              color: "#09ee90",
+              text: "email was sended successfully!",
+              show: true,
+            });
+            console.log(response);
+          })
+          .catch((error) => {
+            this.loading = false;
+            this.$store.dispatch("setSnackBar", {
+              color: "error",
+              text: "email not sended",
+              show: true,
+            });
+            console.error(error);
           });
-          console.log(response);
-        })
-        .catch((error) => {
-          this.loading = false;
-          this.$store.dispatch("setSnackBar", {
-            color: "error lighten-1",
-            text: "email not sended",
-            show: true,
-          });
-          console.error(error);
-        });
+      }
     },
   },
 };
@@ -170,5 +213,18 @@ export default {
 <style scoped>
 .containerMax {
   max-width: 2000px !important;
+}
+.social-icon {
+  font-size: 70px;
+  margin-top: 20px;
+  transition: transform 1s ease-in-out;
+}
+.span-decoration {
+  letter-spacing: 0;
+  transition: letter-spacing 0.5s ease;
+}
+.span-decoration:hover {
+  text-decoration: underline;
+  letter-spacing: 4px;
 }
 </style>

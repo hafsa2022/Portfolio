@@ -10,44 +10,116 @@ export default createStore({
     projects: [
       {
         projectUrl: "https://hafsa2022.github.io/",
-        projectName: " My Portfolio using VUE.JS, VUETIFY and VUEX ",
+        projectName: " My Portfolio ",
         projectGithub: "https://github.com/hafsa2022/Portfolio",
         projectImg: require("../assets/portfolio_home.png"),
+        projectTechnologies: [
+          { technology: require("../assets/vuejs.png") },
+          { technology: require("../assets/vuex.png") },
+          { technology: require("../assets/vuetify.png") },
+          { technology: require("../assets/css.png") },
+          { technology: require("../assets/js.png") },
+        ],
         id: 1,
       },
       {
         projectUrl: "",
         projectGithub:
           "https://github.com/hafsa2022/Site-web-pour-gerer-les-annonces",
-        projectName: " Website to manage rental ads using PHP",
+        projectName: " Website to manage rental ads",
         projectImg: require("../assets/newhome.png"),
+        projectTechnologies: [
+          { technology: require("../assets/php.png") },
+          { technology: require("../assets/html.png") },
+          { technology: require("../assets/css.png") },
+          { technology: require("../assets/js.png") },
+        ],
         id: 2,
       },
       {
         projectUrl: "",
-        projectName: " Cruds using JS ",
+        projectName: "Simple Cruds ",
         projectGithub: "https://github.com/hafsa2022/cruds-html-css-js",
         projectImg: require("../assets/cruds.png"),
+        projectTechnologies: [
+          { technology: require("../assets/html.png") },
+          { technology: require("../assets/css.png") },
+          { technology: require("../assets/js.png") },
+        ],
         id: 3,
       },
       {
         projectUrl: "https://hafsa2022.github.io/contact-form-html-css/",
-        projectName: " Contact Form using HTML and CSS",
+        projectName: " Contact Form",
         projectGithub: "https://github.com/hafsa2022/contact-form-html-css",
         projectImg: require("../assets/contact_form.png"),
+        projectTechnologies: [
+          { technology: require("../assets/html.png") },
+          { technology: require("../assets/css.png") },
+        ],
         id: 4,
       },
       {
         projectUrl: "",
-        projectName: " Todo List using VUE.JS ",
+        projectName: " Todo List ",
         projectImg: "",
+        projectTechnologies: [
+          { technology: require("../assets/vuejs.png") },
+          { technology: require("../assets/vuetify.png") },
+        ],
         id: 5,
       },
     ],
-    activities: [
+    activitiesOfTwc: [
       {
         activityName: "Meeting with members of Club Together We Can",
         activityImg: require("../assets/meeting_img.jpeg"),
+        id: 1,
+      },
+      {
+        activityName: " Best Speaker Competition",
+        activityImg: require("../assets/best_speaker.jpeg"),
+        id: 2,
+      },
+      {
+        activityName:
+          " A humanitarian convoy to the outskirts of the city of Chefchaouen ",
+        activityImg: require("../assets/chefchaoun.jpeg"),
+        id: 3,
+      },
+      {
+        activityName: " Creative Day ",
+        activityImg: require("../assets/creative_day.jpeg"),
+        id: 4,
+      },
+    ],
+    activitiesOfGeo: [
+      {
+        activityName: " visit to Tanger Med ",
+        activityImg: require("../assets/tanger_med.jpeg"),
+        id: 1,
+      },
+
+      {
+        activityName: "  ",
+        activityImg: require("../assets/clubGéoinfo.jpeg"),
+        id: 2,
+      },
+      {
+        activityName: " Investigator at Alsa ",
+        activityImg: require("../assets/clubGeoinfoIntegration.jpeg"),
+        id: 3,
+      },
+      {
+        activityName: " Investigator at Alsa ",
+        activityImg: require("../assets/questionnaire_alsa.jpeg"),
+        id: 4,
+      },
+    ],
+    activitiesOfBasket: [
+      {
+        activityName: " Basketball Competition ",
+        activityImg: require("../assets/basketball.jpeg"),
         id: 1,
       },
       {
@@ -56,41 +128,14 @@ export default createStore({
         id: 2,
       },
       {
-        activityName: " Best Speaker Competition",
-        activityImg: require("../assets/best_speaker.jpeg"),
+        activityName: " Basketball",
+        activityImg: require("../assets/basketball4.jpeg"),
         id: 3,
       },
       {
-        activityName:
-          " A humanitarian convoy to the outskirts of the city of Chefchaouen ",
-        activityImg: require("../assets/chefchaoun.jpeg"),
+        activityName: " Basketball",
+        activityImg: require("../assets/basketball3.jpeg"),
         id: 4,
-      },
-      {
-        activityName:
-          " Seminar Program : Innovative Teaching Practices : Methods & Challenges ",
-        activityImg: require("../assets/english_img.jpeg"),
-        id: 5,
-      },
-      {
-        activityName: " Creative Day ",
-        activityImg: require("../assets/creative_day.jpeg"),
-        id: 6,
-      },
-      {
-        activityName: " visit to Tanger Med ",
-        activityImg: require("../assets/tanger_med.jpeg"),
-        id: 7,
-      },
-      {
-        activityName: " Basketball Competition ",
-        activityImg: require("../assets/basketball.jpeg"),
-        id: 8,
-      },
-      {
-        activityName: " Investigator at Alsa ",
-        activityImg: require("../assets/questionnaire_alsa.jpeg"),
-        id: 9,
       },
     ],
   },

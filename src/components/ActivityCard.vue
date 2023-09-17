@@ -1,18 +1,15 @@
 <template>
   <v-col lg="3" md="6" sm="12" xs="12" class="">
     <div>
-      <v-card class="rounded" elevation="3" width="450" height="400">
+      <v-card class="rounded-lg" elevation="3" width="300" height="350">
         <img
-          width="450"
-          height="300"
+          width="300"
+          height="350"
           :src="activity.activityImg"
           class="img-decoration"
-        /><v-card-title class="text-center mt-4 text-wrap" width="200">{{
-          activity.activityName
-        }}</v-card-title></v-card
-      >
-    </div></v-col
-  >
+        />
+      </v-card></div
+  ></v-col>
 </template>
 <script>
 export default {
