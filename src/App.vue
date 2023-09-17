@@ -18,5 +18,6 @@ export default {
     //
   }),
   components: { NavBar, MyFooter },
+  // components: { NavBar },
 };
 </script>

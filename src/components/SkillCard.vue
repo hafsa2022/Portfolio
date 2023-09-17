@@ -1,17 +1,17 @@
 <template>
-  <v-col lg="3" md="4" sm="12" xs="12">
+  <v-col lg="2" md="4" sm="12" xs="12">
     <div class="text-center">
       <v-card
         class="rounded-lg card-decoration"
         elevation="3"
-        width="230"
-        height="95"
+        width="200"
+        height="85"
       >
         <v-card-title>
           <v-row
-            ><v-col cols="4" class="mt-2"
-              ><img left :src="skill.skillIcon" width="60" height="60" /></v-col
-            ><v-col cols="8" class="mt-5">{{ skill.skillName }}</v-col></v-row
+            ><v-col cols="3" class="mt-2"
+              ><img left :src="skill.skillIcon" width="55" height="55" /></v-col
+            ><v-col cols="9" class="mt-5">{{ skill.skillName }}</v-col></v-row
           ></v-card-title
         ></v-card
       >
@@ -31,7 +31,7 @@ export default {
 </script>
 <style>
 .card-decoration:hover {
-  background-color: black;
+  background-color: #f7ce2de1;
   color: white;
   transform: translate3d(2px);
 }
