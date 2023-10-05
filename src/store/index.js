@@ -9,46 +9,6 @@ export default createStore({
     },
     projects: [
       {
-        projectUrl: "https://hafsa2022.github.io/",
-        projectName: " My Portfolio ",
-        projectGithub: "https://github.com/hafsa2022/Portfolio",
-        projectImg: require("../assets/portfolio_home.png"),
-        projectTechnologies: [
-          { technology: require("../assets/vuejs.png") },
-          { technology: require("../assets/vuex.png") },
-          { technology: require("../assets/vuetify.png") },
-          { technology: require("../assets/css.png") },
-          { technology: require("../assets/js.png") },
-        ],
-        id: 1,
-      },
-      {
-        projectUrl: "",
-        projectGithub:
-          "https://github.com/hafsa2022/Site-web-pour-gerer-les-annonces",
-        projectName: " Website to manage rental ads",
-        projectImg: require("../assets/newhome.png"),
-        projectTechnologies: [
-          { technology: require("../assets/php.png") },
-          { technology: require("../assets/html.png") },
-          { technology: require("../assets/css.png") },
-          { technology: require("../assets/js.png") },
-        ],
-        id: 2,
-      },
-      {
-        projectUrl: "",
-        projectName: "Simple Cruds ",
-        projectGithub: "https://github.com/hafsa2022/cruds-html-css-js",
-        projectImg: require("../assets/cruds.png"),
-        projectTechnologies: [
-          { technology: require("../assets/html.png") },
-          { technology: require("../assets/css.png") },
-          { technology: require("../assets/js.png") },
-        ],
-        id: 3,
-      },
-      {
         projectUrl: "https://hafsa2022.github.io/contact-form-html-css/",
         projectName: " Contact Form",
         projectGithub: "https://github.com/hafsa2022/contact-form-html-css",
@@ -57,17 +17,86 @@ export default createStore({
           { technology: require("../assets/html.png") },
           { technology: require("../assets/css.png") },
         ],
-        id: 4,
+        projectDesciption:
+          "Simple interactive contact ,its allows us to send message adding first name, email, phone number and message  ",
+        id: 1,
       },
       {
         projectUrl: "",
-        projectName: " Todo List ",
-        projectImg: "",
+        projectName: "Simple Cruds ",
+        projectGithub: "https://github.com/hafsa2022/cruds-html-css-js",
+        projectImg: require("../assets/cruds.png"),
+        projectTechnologies: [
+          { technology: require("../assets/js.png") },
+          { technology: require("../assets/html.png") },
+          { technology: require("../assets/css.png") },
+        ],
+        projectDesciption:
+          "Bautiful Gruds allows you to adding, updating, deleting and Searching product using localStorage",
+        id: 2,
+      },
+      {
+        projectUrl: "",
+        projectGithub:
+          "https://github.com/hafsa2022/Site-web-pour-gerer-les-annonces",
+        projectName: " Website to manage rental ads",
+        projectImg: require("../assets/newhome.png"),
+        projectTechnologies: [
+          { technology: require("../assets/js.png") },
+          { technology: require("../assets/html.png") },
+          { technology: require("../assets/css.png") },
+          { technology: require("../assets/php.png") },
+        ],
+        projectDesciption:
+          "Newhome is website allows you to adding or descovring new ads about appartements for rent  ",
+        id: 3,
+      },
+
+      {
+        projectUrl: "https://hafsa2022.github.io/",
+        projectName: " My Portfolio ",
+        projectGithub: "https://github.com/hafsa2022/Portfolio",
+        projectImg: require("../assets/portfolio_home.png"),
+        projectTechnologies: [
+          { technology: require("../assets/js.png") },
+          { technology: require("../assets/css.png") },
+          { technology: require("../assets/vuejs.png") },
+          { technology: require("../assets/vuetify.png") },
+          { technology: require("../assets/vuex.png") },
+        ],
+        projectDesciption:
+          "My portfolio give all information about me such us my skills, my projects, my activities and more ",
+        id: 4,
+      },
+
+      {
+        projectUrl: "",
+        projectName: " Simple Geoportail",
+        projectGithub: "https://github.com/hafsa2022/mini-geoportail",
+        projectImg: require("../assets/geoportail_home.png"),
         projectTechnologies: [
           { technology: require("../assets/vuejs.png") },
           { technology: require("../assets/vuetify.png") },
         ],
+        projectDesciption:
+          "Simple Geoportail allows you to mapping an serach places ans switching between layers ",
         id: 5,
+      },
+      {
+        projectUrl: "",
+        projectName: "Product management",
+        projectGithub:
+          "https://github.com/hafsa2022/product-management-web-application-frontend",
+        projectImg: require("../assets/product-management-page.png"),
+        projectTechnologies: [
+          { technology: require("../assets/vuejs.png") },
+          { technology: require("../assets/vuetify.png") },
+          { technology: require("../assets/vuex.png") },
+          { technology: require("../assets/laravel.png") },
+        ],
+        projectDesciption:
+          "Website allows you to searching, creating, updating and deleting product",
+        id: 6,
       },
     ],
     activitiesOfTwc: [

@@ -4,24 +4,32 @@
     app
     color="#1f1f21"
     elevation="0"
-    :class="containerClass"
     style="padding: 10px 300px"
   >
     <v-toolbar-title class="logo"
       ><span style="font-size: 35px; font-weight: 600">
         <v-img src="../assets/HE.png" controls width="500" height="150" />
-        <!-- <b style="color: white">M</b>y
-        <b style="color: white">P</b>ortfolio -->
       </span>
-      <div :class="navBarClass" @click="toggleNav">
+      <!-- <div :class="navBarClass" @click="toggleNav"> -->
+      <div class="navlist">
         <span></span>
         <span></span>
         <span></span></div
     ></v-toolbar-title>
 
     <v-spacer></v-spacer>
-
-    <div class="navlist">
+    <!-- <div>
+      <v-list density="compact" class="navlist" nav>
+        <v-list-item
+          v-for="(item, index) in items"
+          :key="index"
+          :prepend-icon="item.icon"
+          :title="item.title"
+          :to="item.link"
+        ></v-list-item>
+      </v-list>
+    </div> -->
+    <div class="">
       <v-btn
         rounded="lg"
         size="large"
@@ -74,7 +82,7 @@
         >Contact Me</v-btn
       >
     </div>
-    <div class="navlistClose" v-show="isNavOpen === true">
+    <!-- <div class="navlistClose" v-show="isNavOpen === true">
       <v-btn
         rounded="lg"
         size="large"
@@ -108,7 +116,7 @@
         class="text-h6 button"
         >My Activities</v-btn
       >
-      <!-- <v-btn
+       <v-btn
       rounded="lg"
       size="x-large"
       prepend-icon="mdi-account-group"
@@ -117,7 +125,7 @@
     >
       <template v-slot:prepend> <v-icon color="success"></v-icon> </template>My
       Certifications</v-btn
-    > -->
+    > 
       <v-btn
         rounded="lg"
         size="large"
@@ -127,7 +135,7 @@
       >
         Contact Me</v-btn
       >
-    </div>
+    </div> -->
   </v-app-bar>
 </template>
 
@@ -136,39 +144,65 @@ export default {
   name: "NavBarView",
   data() {
     return {
-      isNavOpen: false,
-      isHeightAugmented: false,
+      // isNavOpen: false,
+      // isHeightAugmented: false,
+      items: [
+        {
+          title: "Home",
+          icon: "mdi-home",
+          link: "/",
+        },
+        { title: "About Me", icon: "mdi-information", link: "/about" },
+        {
+          title: "My Projects",
+          icon: "mdi-laptop",
+          link: "/myprojects",
+        },
+        {
+          title: "My Activities",
+          icon: "mdi-acount-group",
+          link: "/myactivities",
+        },
+        {
+          title: "Contact Me",
+          icon: "mdi-message-text",
+          link: "/contact",
+        },
+      ],
     };
   },
   computed: {
-    navBarClass() {
-      return this.isNavOpen ? "click" : "togglebtn";
-    },
-    containerClass() {
-      return this.isNavOpen
-        ? "containerMaxNavBarClose"
-        : "containerMaxNavBarOpen";
-    },
+    // navBarClass() {
+    //   return this.isNavOpen ? "click" : "togglebtn";
+    // },
+    // containerClass() {
+    //   return this.isNavOpen
+    //     ? "containerMaxNavBarClose"
+    //     : "containerMaxNavBarOpen";
+    // },
   },
   methods: {
-    toggleNav() {
-      this.isNavOpen = !this.isNavOpen;
-    },
+    // toggleNav() {
+    //   this.isNavOpen = !this.isNavOpen;
+    // },
   },
 };
 </script>
 <style>
-.containerMaxNavBarOpen {
+/* .containerMaxNavBarOpen {
   max-width: 2000px;
 }
 .containerMaxNavBarClose {
   max-width: 2000px;
   height: 350px;
-}
+} */
 .logo {
   font-family: "Rubik", sans-serif;
   top: 45px;
 }
+/* .navlist {
+  display: inline;
+} */
 .button {
   transition: all ease 0.4s;
   background-color: #1f1f21;
@@ -195,7 +229,7 @@ export default {
   transition: 0.3s;
   transition-property: transform, opacity;
 }
-.click {
+/* .click {
   width: 45px;
   height: 45px;
   position: absolute;
@@ -225,8 +259,8 @@ export default {
 .click span:last-child {
   -webkit-transform: rotate(45deg) translate(-8px, -8px);
   transform: rotate(45deg) translate(-8px, -8px);
-}
-
+} */
+/* 
 @media (max-width: 1400px) {
   .togglebtn {
     display: initial;
@@ -255,6 +289,6 @@ export default {
   }
   .navlistClose .button .v-icon {
     display: none;
-  }
-}
+  } 
+}*/
 </style>

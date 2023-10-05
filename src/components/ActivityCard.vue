@@ -1,7 +1,7 @@
 <template>
   <v-col lg="3" md="6" sm="12" xs="12" class="">
     <div>
-      <v-card class="rounded-lg" elevation="3" width="300" height="350">
+      <v-card class="rounded-lg" elevation="3">
         <img
           width="300"
           height="350"

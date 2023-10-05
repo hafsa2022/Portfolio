@@ -1,9 +1,14 @@
 <template>
-  <v-container class="containerMax mb-16 pb-8">
+  <v-container class="containerMax pb-8">
     <div style="margin-top: 200px">
-      <v-card width="1000" class="mt-12 mx-auto" elevation="0">
+      <v-card
+        width="1000"
+        class="mt-12 mx-auto"
+        elevation="0"
+        style="background-color: #2b2b2c"
+      >
         <v-dialog v-model="loading" hide-overlay persistent width="300">
-          <v-card color="#09ee90" dark>
+          <v-card color="#ffde59" dark>
             <v-card-text>
               Sending email .....
               <v-progress-linear
@@ -15,36 +20,41 @@
           </v-card>
         </v-dialog>
 
-        <v-card-text>
+        <v-card-text class="mb-14">
           <v-row
             ><v-col lg="6" md="12" sm="12" xsm="12">
-              <v-card class="pa-3" elevation="4">
+              <v-card
+                class="pa-3"
+                elevation="4"
+                style="background-color: #2b2b2c"
+              >
                 <v-card-title
-                  class="mb-2 span-decoration mb-8"
-                  style="font-size: 35px; color: #09ee90"
+                  class="mb-2 span-decoration mb-8 text-center"
+                  style="font-size: 35px; color: #ffde59"
                   >Contact Me</v-card-title
                 >
                 <div class="text-center">
-                  <v-icon class="social-icon" color="#09ee90">
+                  <v-icon class="social-icon" color="white">
                     mdi-map-marker-circle</v-icon
                   >
-                  <h3 class="mb-12">Tangier, Morocco</h3>
+                  <h3 class="mb-12" style="color: #ffde59">Tangier, Morocco</h3>
                 </div>
                 <div class="text-center">
-                  <v-icon class="social-icon" color="#09ee90">
-                    mdi-phone</v-icon
-                  >
-                  <h3 class="mb-12">0650840950</h3>
+                  <v-icon class="social-icon" color="white"> mdi-phone</v-icon>
+                  <h3 class="mb-12" style="color: #ffde59">0650840950</h3>
                 </div>
                 <div class="text-center">
-                  <v-icon class="social-icon" color="#09ee90">
-                    mdi-email</v-icon
-                  >
-                  <h3 class="mb-16">h.hafsaelakhdar@gmail.com</h3>
+                  <v-icon class="social-icon" color="white"> mdi-email</v-icon>
+                  <h3 class="mb-16" style="color: #ffde59">
+                    h.hafsaelakhdar@gmail.com
+                  </h3>
                 </div>
               </v-card></v-col
             ><v-col lg="6" md="12" sm="12" xsm="12">
-              <v-card class="" elevation="0"
+              <v-card
+                class="pa-4"
+                elevation="0"
+                style="background-color: #2b2b2c"
                 ><v-row>
                   <v-col cols="12">
                     <v-text-field
@@ -86,23 +96,20 @@
                     ></v-textarea>
                   </v-col>
                   <v-col cols="12">
-                    <v-card elevation="0">
+                    <v-card elevation="0" style="background-color: #2b2b2c">
                       <v-card-actions class="justify-center">
                         <v-btn
+                          type="submit"
                           color="white"
-                          style="background-color: #09ee90"
+                          style="background-color: #ffde59"
                           size="x-large"
                           @click="sendEmail"
+                          text="Send"
+                          block
                         >
-                          Send
-                        </v-btn>
-                      </v-card-actions></v-card
-                    >
-                  </v-col></v-row
-                ></v-card
-              ></v-col
-            ></v-row
-          >
+                        </v-btn> </v-card-actions
+                    ></v-card> </v-col></v-row></v-card></v-col
+          ></v-row>
         </v-card-text>
       </v-card>
       <div>
@@ -213,6 +220,7 @@ export default {
 <style scoped>
 .containerMax {
   max-width: 2000px !important;
+  background-color: #2b2b2c;
 }
 .social-icon {
   font-size: 70px;
@@ -226,5 +234,8 @@ export default {
 .span-decoration:hover {
   text-decoration: underline;
   letter-spacing: 4px;
+}
+.v-text-field {
+  color: beige;
 }
 </style>

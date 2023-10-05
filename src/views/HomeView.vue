@@ -2,7 +2,7 @@
   <v-container class="containerMax mt-4">
     <div class="head">
       <v-row class="" style="background-color: #1f1f21">
-        <v-col lg="6" md="6" sm="12" xs="12">
+        <v-col lg="6" md="12" sm="12" xs="12">
           <div
             style="position: relative; padding-top: 150px"
             class="mt-16 image-container"
@@ -16,27 +16,34 @@
             />
           </div>
         </v-col>
-        <v-col lg="6" md="6" sm="12" xs="12" class=""
+        <v-col lg="6" md="12" sm="12" xs="12" class=""
           ><div
             style="position: relative; padding-top: 150px; padding-left: 70px"
             class="mt-16 text-left"
           >
             <h1
               class="text-white text-h4 mt-10 my-text"
-              style="font-weight: 600;line-height 2;"
+              style="font-weight: 580;line-height 2;"
             >
               Hello, I'm
             </h1>
             <h1
-              class="text-white text-h2 my-text"
-              style="font-weight: 600;line-height 2;"
+              class="text-white text-h3 my-text"
+              style="font-weight: 580;line-height 2;"
             >
               HAFSA EL AKHDAR
             </h1>
             <span
               class="text-h4 my-text animated-text typing-element"
-              style="font-weight: 600; margin-top: 20px"
+              style="font-weight: 580; margin-top: 20px"
             ></span>
+            <div style="margin-top: 20px">
+              <span class="text-grey">Best Welcome To My Portfolio !</span
+              ><br />
+              <span class="text-grey"
+                >This Work Resume All Information About Me !</span
+              >
+            </div>
 
             <br />
             <div class="text-left">
@@ -67,13 +74,14 @@
               >
             </div>
             <div class="mt-10 icon-container text-left">
-              <v-icon class="social-icon" color="">mdi-instagram</v-icon>
+              <a href="https://github.com/hafsa2022">
+                <v-icon class="social-icon" color="">mdi-github</v-icon></a
+              >
               <a href="https://www.linkedin.com/in/hafsa-el-akhdar-92b446198">
                 <v-icon class="social-icon" color="">mdi-linkedin</v-icon></a
               >
-
-              <a href="https://github.com/hafsa2022">
-                <v-icon class="social-icon" color="">mdi-github</v-icon></a
+              <a href="#"
+                ><v-icon class="social-icon" color="">mdi-instagram</v-icon></a
               >
             </div>
           </div></v-col
@@ -112,6 +120,7 @@ export default {
 .containerMax {
   max-width: 2000px !important;
   background-color: #1f1f21;
+  height: 900px;
 }
 .head {
   position: relative;
@@ -122,26 +131,6 @@ export default {
   width: 100%;
   color: #fff;
 }
-/* .head:before {
-  height: 100%;
-  width: 50%;
-  left: 0;
-  top: 0;
-  position: absolute;
-  background-color: #1f1f21;
-  content: "";
-  transform: skew(0deg, 10deg);
-}
-.head:after {
-  height: 100%;
-  width: 50%;
-  right: 0;
-  top: 0;
-  position: absolute;
-  background-color: #1f1f21;
-  content: "";
-  transform: skew(0deg, -10deg);
-} */
 .btn-download {
   color: white;
   background: #f7ce2de1;
@@ -196,27 +185,18 @@ export default {
   transform: rotate(360deg);
   color: #ffde59;
 }
-/* .my-text-animation {
-  animation: mynameanimation 8s ease-in-out 1s infinite alternate;
-}
-@keyframes mynameanimation {
-  0% {
-    opacity: 0;
-    transform: translateX(-20px);
-    transition: opacity 1s, transform 1s;
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
-} */
-@media (max-width: 1400px) {
+@media (max-width: 1900px) {
   .v-img {
-    max-height: 300px;
-    max-width: 300px;
+    margin: auto;
   }
-  .social-icon {
+  /* .social-icon {
     font-size: 22px;
+  } */
+  .containerMax {
+    height: 1500px;
   }
+  /* .btn-contact {
+    display: block;
+  } */
 }
 </style>
