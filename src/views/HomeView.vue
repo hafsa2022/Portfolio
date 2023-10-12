@@ -3,10 +3,7 @@
     <div class="head">
       <v-row class="" style="background-color: #1f1f21">
         <v-col lg="6" md="12" sm="12" xs="12">
-          <div
-            style="position: relative; padding-top: 150px"
-            class="mt-16 image-container"
-          >
+          <div style="position: relative" class="mt-16 image-container">
             <v-img
               class="animated-image"
               max-height="400"
@@ -18,23 +15,23 @@
         </v-col>
         <v-col lg="6" md="12" sm="12" xs="12" class=""
           ><div
-            style="position: relative; padding-top: 150px; padding-left: 70px"
-            class="mt-16 text-left"
+            style="position: relative"
+            class="mt-16 text-left text-container"
           >
             <h1
-              class="text-white text-h4 mt-10 my-text"
+              class="text-white mt-10 my-text"
               style="font-weight: 580;line-height 2;"
             >
               Hello, I'm
             </h1>
             <h1
-              class="text-white text-h3 my-text"
+              class="text-white my-text"
               style="font-weight: 580;line-height 2;"
             >
               HAFSA EL AKHDAR
             </h1>
             <span
-              class="text-h4 my-text animated-text typing-element"
+              class="my-text typing-element"
               style="font-weight: 580; margin-top: 20px"
             ></span>
             <div style="margin-top: 20px">
@@ -46,7 +43,7 @@
             </div>
 
             <br />
-            <div class="text-left">
+            <div class="text-left btns">
               <a
                 href="https://drive.google.com/file/d/16tARTAwK6nJZZDtwqbEpXt8NGO_g0ku9/view?usp=sharing"
                 download="download.pdf"
@@ -65,7 +62,7 @@
               <v-btn
                 tile
                 dark
-                class="text-white mt-6 ml-4 btn-contact"
+                class="text-white mt-6 btn-contact"
                 variant="outlined"
                 height="72"
                 min-width="200"
@@ -100,6 +97,7 @@ export default {
     return {
       srcImg: require("../assets/CP_hafsa.png"),
       isRevealed: false,
+      windowWidth: null,
     };
   },
   components: {},
@@ -148,6 +146,7 @@ export default {
   font-weight: 600;
   border-radius: 25px;
   border: none;
+  margin-left: 20px;
 }
 .btn-download:hover {
   transform: translateY(-5px);
@@ -163,6 +162,7 @@ export default {
 .image-container {
   width: 450px;
   height: 450px;
+  padding-top: 200px;
 }
 .image-container:hover .animated-image {
   transform: scale(1.2);
@@ -171,6 +171,8 @@ export default {
   line-height: 1.5;
   font-family: "Rubik", sans-serif;
   letter-spacing: 4px;
+  font-size: 2.3em;
+  font-weight: bolder;
 }
 .typing-element {
   color: #f7ce2de1;
@@ -185,18 +187,59 @@ export default {
   transform: rotate(360deg);
   color: #ffde59;
 }
-@media (max-width: 1900px) {
+.text-container {
+  padding-top: 140px;
+  padding-left: 70px;
+}
+@media (max-width: 1400px) {
+  .my-text {
+    letter-spacing: 2px;
+    font-size: 1.9em;
+  }
   .v-img {
     margin: auto;
+  }
+  .btn-contact {
+    font-size: 12px;
+    font-weight: 600;
+    margin-left: 20px;
+  }
+  .btn-download {
+    font-size: 12px;
+    font-weight: 600;
   }
   /* .social-icon {
     font-size: 22px;
   } */
   .containerMax {
-    height: 1500px;
+    height: 1100px;
   }
-  /* .btn-contact {
+
+  .image-container {
+    padding-top: 50px;
+  }
+  .text-container {
+    padding-top: 5px;
+    padding-left: 10px;
+  }
+}
+
+@media (max-width: 980px) {
+  .my-text {
+    letter-spacing: 2px;
+    font-size: 1em;
+  }
+  .v-img {
+    margin: auto;
+  }
+  .btn-contact {
+    margin-left: 0px;
+  }
+  .containerMax {
+    height: 1300px;
+  }
+  .btns {
     display: block;
-  } */
+  }
 }
 </style>

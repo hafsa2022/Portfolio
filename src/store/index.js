@@ -7,6 +7,7 @@ export default createStore({
       text: "",
       show: false,
     },
+    isResized: null,
     projects: [
       {
         projectUrl: "https://hafsa2022.github.io/contact-form-html-css/",
@@ -68,6 +69,18 @@ export default createStore({
           "My portfolio give all information about me such us my skills, my projects, my activities and more ",
         id: 4,
       },
+      {
+        projectUrl: "",
+        projectName: "Todo List",
+        projectGithub: "https://github.com/hafsa2022/todo-list",
+        projectImg: require("../assets/todoList.png"),
+        projectTechnologies: [
+          { technology: require("../assets/vuejs.png") },
+          { technology: require("../assets/vuetify.png") },
+        ],
+        projectDesciption: "Simple Todo List for managing tasks",
+        id: 5,
+      },
 
       {
         projectUrl: "",
@@ -80,7 +93,7 @@ export default createStore({
         ],
         projectDesciption:
           "Simple Geoportail allows you to mapping an serach places ans switching between layers ",
-        id: 5,
+        id: 6,
       },
       {
         projectUrl: "",
@@ -96,7 +109,7 @@ export default createStore({
         ],
         projectDesciption:
           "Website allows you to searching, creating, updating and deleting product",
-        id: 6,
+        id: 7,
       },
     ],
     activitiesOfTwc: [
@@ -175,10 +188,16 @@ export default createStore({
       state.snackbar.text = payload.text;
       state.snackbar.show = payload.show;
     },
+    SET_IS_RESIZED(state, value) {
+      state.isResized = value;
+    },
   },
   actions: {
     setSnackBar({ commit }, payload) {
       commit("SET_SNACKBAR", payload);
+    },
+    setIsResized({ commit }, payload) {
+      commit("SET_IS_RESIZED", payload);
     },
   },
   modules: {},

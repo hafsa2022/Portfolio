@@ -14,13 +14,13 @@
         }}</v-card-text>
         <v-card-actions class="mx-auto" height="50">
           <v-row class=""
-            ><v-col cols="6">
+            ><v-col cols="6" v-if="project.projectUrl != ''">
               <a :href="project.projectUrl" target="_blank">
                 <v-btn variant="text" color="#f7ce2de1" size="large">
                   See Demo
                 </v-btn>
               </a></v-col
-            ><v-col cols="6">
+            ><v-col :cols="project.projectUrl == '' ? 12 : 6">
               <a :href="project.projectGithub" target="_blank">
                 <v-btn variant="text" size="large" icon color="">
                   <v-icon color="#f7ce2de1" size="large" class=""

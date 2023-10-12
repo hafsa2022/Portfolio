@@ -1,5 +1,5 @@
 <template>
-  <v-col lg="2" md="12" sm="12" xs="12">
+  <v-col lg="2" md="9" sm="9" xs="9">
     <div class="text-center">
       <v-card class="rounded-lg card-decoration" elevation="3" width="100%">
         <v-card-title>

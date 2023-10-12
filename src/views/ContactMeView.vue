@@ -21,8 +21,8 @@
         </v-dialog>
 
         <v-card-text class="mb-14">
-          <v-row
-            ><v-col lg="6" md="12" sm="12" xsm="12">
+          <v-row justify="center"
+            ><v-col lg="6" md="7" sm="7" xsm="7">
               <v-card
                 class="pa-3"
                 elevation="4"
@@ -50,7 +50,7 @@
                   </h3>
                 </div>
               </v-card></v-col
-            ><v-col lg="6" md="12" sm="12" xsm="12">
+            ><v-col lg="6" md="7" sm="7" xsm="7">
               <v-card
                 class="pa-4"
                 elevation="0"
