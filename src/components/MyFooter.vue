@@ -1,33 +1,31 @@
 <template>
   <v-footer dark padless style="background-color: #1f1f21">
-    <div class="containt">
-      <v-card
-        width="100%"
-        class="text-white text-center"
-        style="background-color: #1f1f21"
-      >
-        <v-card-text class="">
-          <h1 class="py-2 text-white">You Can Find Us At</h1>
-          <a
-            target="_blank"
-            v-bind:href="social.url"
-            v-for="social in socials"
-            :key="social.id"
-          >
-            <v-btn class="ma-4" icon>
-              <v-icon size="24px" class="social-icon">{{ social.icon }}</v-icon>
-            </v-btn>
-          </a>
-        </v-card-text>
+    <v-card
+      width="100%"
+      class="text-white text-center"
+      style="background-color: #1f1f21"
+    >
+      <v-card-text class="">
+        <h1 class="py-2 text-white">You Can Find Us At</h1>
+        <a
+          target="_blank"
+          v-bind:href="social.url"
+          v-for="social in socials"
+          :key="social.id"
+        >
+          <v-btn class="ma-4" icon>
+            <v-icon size="24px" class="social-icon">{{ social.icon }}</v-icon>
+          </v-btn>
+        </a>
+      </v-card-text>
 
-        <v-card-text class="text-white">
-          Copyright {{ new Date().getFullYear() }}
-          <span class="text-white">- Hafsa El Akhdar </span>
-          |
-          <span class="typing-element"></span>
-        </v-card-text>
-      </v-card>
-    </div>
+      <v-card-text class="text-white">
+        Copyright {{ new Date().getFullYear() }}
+        <span class="text-white">- Hafsa El Akhdar </span>
+        |
+        <span class="typing-element"></span>
+      </v-card-text>
+    </v-card>
   </v-footer>
 </template>
 
@@ -96,27 +94,4 @@ export default {
 .typing-element {
   color: #f7ce2de1;
 }
-.containt {
-  position: relative;
-  text-align: center;
-  padding: 10px 300px;
-  margin-bottom: 6px;
-  height: 100%;
-  width: 100%;
-}
-@media (max-width: 1400px) {
-  *,
-  ::before,
-  ::after {
-    background-repeat: no-repeat;
-    box-sizing: content-box;
-  }
-  .containt {
-    padding: 10px 0px;
-  }
-}
-/* @media (max-width: 1000px) {
-  .v-footer {
-  }
-} */
 </style>
