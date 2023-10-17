@@ -14,11 +14,20 @@
           </div>
         </v-col>
         <v-col lg="6" md="12" sm="12" xs="12" class=""
-          ><div style="position: relative" class="mt-16 text-left text-container">
-            <h1 class="text-white mt-10 my-text" style="font-weight: 580;line-height 2;">
+          ><div
+            style="position: relative"
+            class="mt-16 text-left text-container"
+          >
+            <h1
+              class="text-white mt-10 my-text"
+              style="font-weight: 580;line-height 2;"
+            >
               Hello, I'm
             </h1>
-            <h1 class="text-white my-text" style="font-weight: 580;line-height 2;">
+            <h1
+              class="text-white my-text"
+              style="font-weight: 580;line-height 2;"
+            >
               HAFSA EL AKHDAR
             </h1>
             <span
@@ -26,8 +35,11 @@
               style="font-weight: 580; margin-top: 20px"
             ></span>
             <div style="margin-top: 20px">
-              <span class="text-grey">Best Welcome To My Portfolio !</span><br />
-              <span class="text-grey">This Work Resume All Information About Me !</span>
+              <span class="text-grey">Best Welcome To My Portfolio !</span
+              ><br />
+              <span class="text-grey"
+                >This Work Resume All Information About Me !</span
+              >
             </div>
 
             <br />
@@ -65,7 +77,9 @@
               <a href="https://www.linkedin.com/in/hafsa-el-akhdar-92b446198">
                 <v-icon class="social-icon" color="">mdi-linkedin</v-icon></a
               >
-              <a href="#"><v-icon class="social-icon" color="">mdi-instagram</v-icon></a>
+              <a href="#"
+                ><v-icon class="social-icon" color="">mdi-instagram</v-icon></a
+              >
             </div>
           </div></v-col
         >
@@ -90,7 +104,11 @@ export default {
   components: {},
   mounted() {
     const options = {
-      strings: ["Software Engineer !", "Full Stack Engineer !", "GIS Engineering !"],
+      strings: [
+        "Software Engineer !",
+        "Full Stack Engineer !",
+        "GIS Engineering !",
+      ],
       typeSpeed: 50,
       backSpeed: 25,
       loop: true,

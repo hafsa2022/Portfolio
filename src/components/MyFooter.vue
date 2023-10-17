@@ -56,7 +56,11 @@ export default {
   }),
   mounted() {
     const options = {
-      strings: ["Software Engineer !", "Full Stack Engineer !", "GIS Engineering !"],
+      strings: [
+        "Software Engineer !",
+        "Full Stack Engineer !",
+        "GIS Engineering !",
+      ],
       typeSpeed: 50,
       backSpeed: 25,
       loop: true,

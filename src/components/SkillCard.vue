@@ -1,7 +1,12 @@
 <template>
   <v-col lg="4" md="10" sm="10" xs="10">
     <div class="text-center">
-      <v-card class="rounded-lg card-decoration" elevation="3" width="100%" height="30%">
+      <v-card
+        class="rounded-lg card-decoration"
+        elevation="3"
+        width="100%"
+        height="30%"
+      >
         <v-card-title>
           <v-row
             ><v-col cols="12" class="mt-2"

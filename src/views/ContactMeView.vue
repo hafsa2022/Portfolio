@@ -1,6 +1,6 @@
 <template>
   <v-container class="containerMax pb-8">
-    <div style="margin-top: 200px" class="containt">
+    <div style="margin-top: 40px" class="containt">
       <v-card
         width="80%"
         class="mt-12 mx-auto"
@@ -23,11 +23,7 @@
         <v-card-text class="mb-14">
           <v-row justify="center"
             ><v-col lg="5" md="12" sm="12" xsm="12">
-              <v-card
-                class="pa-3"
-                elevation="4"
-                style="background-color: #2b2b2c"
-              >
+              <v-card class="pa-3" elevation="4" style="background-color: #2b2b2c">
                 <v-card-title
                   class="mb-2 span-decoration mb-8 text-center"
                   style="font-size: 35px; color: #ffde59"
@@ -45,17 +41,11 @@
                 </div>
                 <div class="text-center">
                   <v-icon class="social-icon" color="white"> mdi-email</v-icon>
-                  <h3 class="mb-16" style="color: #ffde59">
-                    h.hafsaelakhdar@gmail.com
-                  </h3>
+                  <h3 class="mb-16" style="color: #ffde59">h.hafsaelakhdar@gmail.com</h3>
                 </div>
               </v-card></v-col
             ><v-col lg="7" md="12" sm="12" xsm="12">
-              <v-card
-                class="pa-3"
-                elevation="0"
-                style="background-color: #2b2b2c"
-              >
+              <v-card class="pa-3" elevation="0" style="background-color: #2b2b2c">
                 <v-col cols="12">
                   <v-text-field
                     v-model="fullName"
@@ -113,13 +103,7 @@
         <v-snackbar v-model="snackbar.show" :color="snackbar.color">
           {{ snackbar.text }}
           <template v-slot:action="{ attrs }">
-            <v-btn
-              color="white"
-              text
-              class=""
-              v-bind="attrs"
-              @click="closeSnackbar"
-            >
+            <v-btn color="white" text class="" v-bind="attrs" @click="closeSnackbar">
               Close
             </v-btn>
           </template>
@@ -147,8 +131,7 @@ export default {
         },
         required: (value) => !!value || "Required.",
         email: (value) => {
-          const pattern =
-            /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+          const pattern = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
           return pattern.test(value) || "Invalid e-mail.";
         },
       },

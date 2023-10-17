@@ -78,7 +78,8 @@ export default createStore({
           { technology: require("../assets/vuejs.png") },
           { technology: require("../assets/vuetify.png") },
         ],
-        projectDesciption: "Simple Todo List for managing tasks allows you adding and remving tasks",
+        projectDesciption:
+          "Simple Todo List for managing tasks allows you adding and remving tasks",
         id: 5,
       },
 
