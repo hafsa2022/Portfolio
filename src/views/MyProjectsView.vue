@@ -59,4 +59,15 @@ export default {
   text-decoration: underline;
   letter-spacing: 4px;
 }
+@media (max-width: 980px) {
+  *,
+  ::before,
+  ::after {
+    background-repeat: no-repeat;
+    box-sizing: content-box;
+  }
+  .containt {
+    padding: 10px 0px;
+  }
+}
 </style>

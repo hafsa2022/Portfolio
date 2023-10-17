@@ -1,8 +1,8 @@
 <template>
   <v-container class="containerMax pb-8">
-    <div style="margin-top: 200px">
+    <div style="margin-top: 200px" class="containt">
       <v-card
-        width="1000"
+        width="80%"
         class="mt-12 mx-auto"
         elevation="0"
         style="background-color: #2b2b2c"
@@ -22,7 +22,7 @@
 
         <v-card-text class="mb-14">
           <v-row justify="center"
-            ><v-col lg="6" md="7" sm="7" xsm="7">
+            ><v-col lg="5" md="12" sm="12" xsm="12">
               <v-card
                 class="pa-3"
                 elevation="4"
@@ -41,7 +41,7 @@
                 </div>
                 <div class="text-center">
                   <v-icon class="social-icon" color="white"> mdi-phone</v-icon>
-                  <h3 class="mb-12" style="color: #ffde59">0650840950</h3>
+                  <h3 class="mb-12" style="color: #ffde59">+212650840950</h3>
                 </div>
                 <div class="text-center">
                   <v-icon class="social-icon" color="white"> mdi-email</v-icon>
@@ -50,65 +50,62 @@
                   </h3>
                 </div>
               </v-card></v-col
-            ><v-col lg="6" md="7" sm="7" xsm="7">
+            ><v-col lg="7" md="12" sm="12" xsm="12">
               <v-card
-                class="pa-4"
+                class="pa-3"
                 elevation="0"
                 style="background-color: #2b2b2c"
-                ><v-row>
-                  <v-col cols="12">
-                    <v-text-field
-                      v-model="fullName"
-                      variant="outlined"
-                      label="Full Name"
-                      :rules="[rules.required]"
-                    ></v-text-field>
-                  </v-col>
-                </v-row>
-                <v-row>
-                  <v-col cols="12">
-                    <v-text-field
-                      variant="outlined"
-                      v-model="emailAddress"
-                      label="Email"
-                      hint="example@gmail.com"
-                      :rules="[rules.required, rules.email]"
-                    ></v-text-field>
-                  </v-col>
-                </v-row>
-                <v-row>
-                  <v-col cols="12">
-                    <v-text-field
-                      v-model="phoneNumber"
-                      variant="outlined"
-                      label="Phone Number"
-                      maxlength="15"
-                      :rules="[rules.number, rules.required]"
-                    ></v-text-field>
-                  </v-col>
-                </v-row>
-                <v-row>
-                  <v-col cols="12">
-                    <v-textarea
-                      v-model="message"
-                      label="Message"
-                      variant="outlined"
-                    ></v-textarea>
-                  </v-col>
-                  <v-col cols="12">
-                    <v-card elevation="0" style="background-color: #2b2b2c">
-                      <v-card-actions class="justify-center">
-                        <v-btn
-                          type="submit"
-                          color="white"
-                          style="background-color: #ffde59"
-                          size="x-large"
-                          @click="sendEmail"
-                          text="Send"
-                          block
-                        >
-                        </v-btn> </v-card-actions
-                    ></v-card> </v-col></v-row></v-card></v-col
+              >
+                <v-col cols="12">
+                  <v-text-field
+                    v-model="fullName"
+                    variant="outlined"
+                    label="Full Name"
+                    :rules="[rules.required]"
+                  ></v-text-field>
+                </v-col>
+
+                <v-col cols="12">
+                  <v-text-field
+                    variant="outlined"
+                    v-model="emailAddress"
+                    label="Email"
+                    hint="example@gmail.com"
+                    :rules="[rules.required, rules.email]"
+                  ></v-text-field>
+                </v-col>
+
+                <v-col cols="12">
+                  <v-text-field
+                    v-model="phoneNumber"
+                    variant="outlined"
+                    label="Phone Number"
+                    maxlength="15"
+                    :rules="[rules.number, rules.required]"
+                  ></v-text-field>
+                </v-col>
+
+                <v-col cols="12">
+                  <v-textarea
+                    v-model="message"
+                    label="Message"
+                    variant="outlined"
+                  ></v-textarea>
+                </v-col>
+                <v-col cols="12">
+                  <v-card elevation="0" style="background-color: #2b2b2c">
+                    <v-card-actions class="justify-center">
+                      <v-btn
+                        type="submit"
+                        color="white"
+                        style="background-color: #ffde59"
+                        size="x-large"
+                        @click="sendEmail"
+                        text="Send"
+                        block
+                      >
+                      </v-btn> </v-card-actions
+                  ></v-card> </v-col></v-card></v-col
           ></v-row>
         </v-card-text>
       </v-card>
@@ -237,5 +234,29 @@ export default {
 }
 .v-text-field {
   color: beige;
+}
+.containt {
+  position: relative;
+  text-align: center;
+  padding: 10px 300px;
+  margin-bottom: 6px;
+  height: 100%;
+  width: 100%;
+}
+@media (max-width: 1400px) {
+  *,
+  ::before,
+  ::after {
+    background-repeat: no-repeat;
+    box-sizing: content-box;
+  }
+  .containt {
+    padding: 10px 0px;
+  }
+  .center-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 </style>

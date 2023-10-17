@@ -2,8 +2,8 @@
   <v-container class="containerMax mt-4">
     <div class="head">
       <v-row class="" style="background-color: #1f1f21">
-        <v-col lg="6" md="12" sm="12" xs="12">
-          <div style="position: relative" class="mt-16 image-container">
+        <v-col lg="6" md="12" sm="12" xs="12" class="center-content">
+          <div class="mt-16 image-container">
             <v-img
               class="animated-image"
               max-height="400"
@@ -14,20 +14,11 @@
           </div>
         </v-col>
         <v-col lg="6" md="12" sm="12" xs="12" class=""
-          ><div
-            style="position: relative"
-            class="mt-16 text-left text-container"
-          >
-            <h1
-              class="text-white mt-10 my-text"
-              style="font-weight: 580;line-height 2;"
-            >
+          ><div style="position: relative" class="mt-16 text-left text-container">
+            <h1 class="text-white mt-10 my-text" style="font-weight: 580;line-height 2;">
               Hello, I'm
             </h1>
-            <h1
-              class="text-white my-text"
-              style="font-weight: 580;line-height 2;"
-            >
+            <h1 class="text-white my-text" style="font-weight: 580;line-height 2;">
               HAFSA EL AKHDAR
             </h1>
             <span
@@ -35,11 +26,8 @@
               style="font-weight: 580; margin-top: 20px"
             ></span>
             <div style="margin-top: 20px">
-              <span class="text-grey">Best Welcome To My Portfolio !</span
-              ><br />
-              <span class="text-grey"
-                >This Work Resume All Information About Me !</span
-              >
+              <span class="text-grey">Best Welcome To My Portfolio !</span><br />
+              <span class="text-grey">This Work Resume All Information About Me !</span>
             </div>
 
             <br />
@@ -77,9 +65,7 @@
               <a href="https://www.linkedin.com/in/hafsa-el-akhdar-92b446198">
                 <v-icon class="social-icon" color="">mdi-linkedin</v-icon></a
               >
-              <a href="#"
-                ><v-icon class="social-icon" color="">mdi-instagram</v-icon></a
-              >
+              <a href="#"><v-icon class="social-icon" color="">mdi-instagram</v-icon></a>
             </div>
           </div></v-col
         >
@@ -90,6 +76,7 @@
 
 <script>
 import Typed from "typed.js";
+// import MyFooter from "../components/MyFooter.vue";
 export default {
   name: "HomeView",
 
@@ -103,7 +90,7 @@ export default {
   components: {},
   mounted() {
     const options = {
-      strings: ["Software Engineer !", "GIS Engineering !"],
+      strings: ["Software Engineer !", "Full Stack Engineer !", "GIS Engineering !"],
       typeSpeed: 50,
       backSpeed: 25,
       loop: true,
@@ -127,7 +114,6 @@ export default {
   margin-bottom: 6px;
   height: 100%;
   width: 100%;
-  color: #fff;
 }
 .btn-download {
   color: white;
@@ -137,6 +123,7 @@ export default {
   font-weight: 600;
   border-radius: 25px;
   border: 3px solid white;
+  margin-right: 20px;
 }
 .btn-contact {
   color: white;
@@ -146,7 +133,6 @@ export default {
   font-weight: 600;
   border-radius: 25px;
   border: none;
-  margin-left: 20px;
 }
 .btn-download:hover {
   transform: translateY(-5px);
@@ -158,6 +144,7 @@ export default {
 }
 .animated-image {
   transition: transform 1s ease-in-out;
+  vertical-align: middle;
 }
 .image-container {
   width: 450px;
@@ -171,7 +158,7 @@ export default {
   line-height: 1.5;
   font-family: "Rubik", sans-serif;
   letter-spacing: 4px;
-  font-size: 2.3em;
+  font-size: 2.1em;
   font-weight: bolder;
 }
 .typing-element {
@@ -192,25 +179,29 @@ export default {
   padding-left: 70px;
 }
 @media (max-width: 1400px) {
+  .center-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .head {
+    padding: 0px 0px;
+  }
   .my-text {
-    letter-spacing: 2px;
-    font-size: 1.9em;
+    letter-spacing: 3px;
+    font-size: 2em;
   }
-  .v-img {
-    margin: auto;
-  }
-  .btn-contact {
+  /* .btn-contact {
     font-size: 12px;
     font-weight: 600;
-    margin-left: 20px;
   }
   .btn-download {
     font-size: 12px;
     font-weight: 600;
-  }
-  /* .social-icon {
-    font-size: 22px;
   } */
+  .social-icon {
+    font-size: 32px;
+  }
   .containerMax {
     height: 1100px;
   }
@@ -219,24 +210,34 @@ export default {
     padding-top: 50px;
   }
   .text-container {
-    padding-top: 5px;
-    padding-left: 10px;
+    padding-top: 0px;
+    padding-left: 0px;
   }
 }
 
 @media (max-width: 980px) {
+  .center-content {
+    padding: 0px;
+  }
+  .head {
+    padding: 10px 0px;
+  }
+  *,
+  ::before,
+  ::after {
+    background-repeat: no-repeat;
+    box-sizing: content-box;
+  }
   .my-text {
-    letter-spacing: 2px;
-    font-size: 1em;
+    letter-spacing: 3px;
+    font-size: 1.4em;
   }
   .v-img {
     margin: auto;
-  }
-  .btn-contact {
-    margin-left: 0px;
+    justify-content: center;
   }
   .containerMax {
-    height: 1300px;
+    height: 1150px;
   }
   .btns {
     display: block;

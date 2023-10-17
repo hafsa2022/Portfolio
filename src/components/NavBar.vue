@@ -1,42 +1,38 @@
 <template>
-  <v-app-bar
-    elevate-on-scroll
-    app
-    color="#1f1f21"
-    elevation="0"
-    style="padding: 10px 300px"
-  >
+  <v-app-bar elevate-on-scroll app color="#1f1f21" elevation="0" class="">
     <v-toolbar-title class="logo"
-      ><span style="font-size: 35px; font-weight: 600">
+      ><span>
         <v-img src="../assets/HE.png" controls width="500" height="150" />
       </span>
     </v-toolbar-title>
 
     <v-spacer></v-spacer>
-    <v-menu transition="scroll-y-transition">
-      <template v-slot:activator="{ props }">
-        <v-btn
-          color="primary"
-          v-bind="props"
-          class="togglebtn"
-          v-show="isResized"
-        >
-          <span></span>
-          <span></span>
-          <span></span>
-        </v-btn>
-      </template>
-      <v-list style="background: #1f1f21">
-        <v-list-item
-          color="#f7ce2de1"
-          v-for="(item, index) in items"
-          :key="index"
-          :prepend-icon="item.icon"
-          :title="item.title"
-          :to="item.link"
-        ></v-list-item>
-      </v-list>
-    </v-menu>
+    <span style="padding-right: 50px">
+      <v-menu transition="scroll-y-transition">
+        <template v-slot:activator="{ props }">
+          <v-btn
+            color="primary"
+            v-bind="props"
+            class="togglebtn"
+            v-show="isResized"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </v-btn>
+        </template>
+        <v-list style="background: #1f1f21">
+          <v-list-item
+            color="#f7ce2de1"
+            v-for="(item, index) in items"
+            :key="index"
+            :prepend-icon="item.icon"
+            :title="item.title"
+            :to="item.link"
+          ></v-list-item>
+        </v-list> </v-menu
+    ></span>
+
     <!-- <div @click="setToggleNav"></div> -->
     <!-- <div>
       <v-list
@@ -111,7 +107,6 @@
 </template>
 
 <script>
-// import NavDrawer from "../components/NavDrawer.vue";
 export default {
   name: "NavBarView",
   data() {
@@ -146,9 +141,7 @@ export default {
     window.addEventListener("resize", this.checkWindow);
     this.checkWindow();
   },
-  components: {
-    // NavDrawer,
-  },
+  components: {},
   methods: {
     checkWindow() {
       this.windowWidth = window.innerWidth;
@@ -166,6 +159,9 @@ export default {
 .logo {
   font-family: "Rubik", sans-serif;
   top: 45px;
+}
+.v-toolbar__content {
+  padding-right: 200px;
 }
 .button {
   transition: all ease 0.4s;
@@ -198,5 +194,10 @@ export default {
 }
 .v-list-item_prepend {
   color: white;
+}
+@media (max-width: 1600px) {
+  .v-toolbar__content {
+    padding-right: 0px;
+  }
 }
 </style>

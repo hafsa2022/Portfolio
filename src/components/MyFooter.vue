@@ -1,6 +1,6 @@
 <template>
-  <div class="">
-    <v-footer dark padless style="background-color: #1f1f21">
+  <v-footer dark padless style="background-color: #1f1f21">
+    <div class="containt">
       <v-card
         width="100%"
         class="text-white text-center"
@@ -27,8 +27,8 @@
           <span class="typing-element"></span>
         </v-card-text>
       </v-card>
-    </v-footer>
-  </div>
+    </div>
+  </v-footer>
 </template>
 
 <script>
@@ -56,7 +56,7 @@ export default {
   }),
   mounted() {
     const options = {
-      strings: ["Software Engineer !", "GIS Engineering !"],
+      strings: ["Software Engineer !", "Full Stack Engineer !", "GIS Engineering !"],
       typeSpeed: 50,
       backSpeed: 25,
       loop: true,
@@ -77,6 +77,7 @@ export default {
 .v-footer {
   padding: 10px 0px;
   border-radius: 0px;
+  width: 100%;
 }
 .social-icon {
   font-size: 44px;
@@ -91,4 +92,27 @@ export default {
 .typing-element {
   color: #f7ce2de1;
 }
+.containt {
+  position: relative;
+  text-align: center;
+  padding: 10px 300px;
+  margin-bottom: 6px;
+  height: 100%;
+  width: 100%;
+}
+@media (max-width: 1400px) {
+  *,
+  ::before,
+  ::after {
+    background-repeat: no-repeat;
+    box-sizing: content-box;
+  }
+  .containt {
+    padding: 10px 0px;
+  }
+}
+/* @media (max-width: 1000px) {
+  .v-footer {
+  }
+} */
 </style>

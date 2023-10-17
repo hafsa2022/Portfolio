@@ -19,7 +19,7 @@ export default createStore({
           { technology: require("../assets/css.png") },
         ],
         projectDesciption:
-          "Simple interactive contact ,its allows us to send message adding first name, email, phone number and message  ",
+          "Simple interactive contact ,its allows us to sending message ",
         id: 1,
       },
       {
@@ -33,7 +33,7 @@ export default createStore({
           { technology: require("../assets/css.png") },
         ],
         projectDesciption:
-          "Bautiful Gruds allows you to adding, updating, deleting and Searching product using localStorage",
+          "Bautiful Gruds allows you to adding, updating, deleting and Searching product",
         id: 2,
       },
       {
@@ -66,7 +66,7 @@ export default createStore({
           { technology: require("../assets/vuex.png") },
         ],
         projectDesciption:
-          "My portfolio give all information about me such us my skills, my projects, my activities and more ",
+          "My portfolio descibe me such us my skills, my projects, my activities and more ",
         id: 4,
       },
       {
@@ -78,7 +78,7 @@ export default createStore({
           { technology: require("../assets/vuejs.png") },
           { technology: require("../assets/vuetify.png") },
         ],
-        projectDesciption: "Simple Todo List for managing tasks",
+        projectDesciption: "Simple Todo List for managing tasks allows you adding and remving tasks",
         id: 5,
       },
 
@@ -92,7 +92,7 @@ export default createStore({
           { technology: require("../assets/vuetify.png") },
         ],
         projectDesciption:
-          "Simple Geoportail allows you to mapping an serach places ans switching between layers ",
+          "Simple Geoportail allows you to mapping an serach places and manipulating between layers ",
         id: 6,
       },
       {
@@ -143,7 +143,7 @@ export default createStore({
       },
 
       {
-        activityName: "  ",
+        activityName: "exchange day",
         activityImg: require("../assets/clubGéoinfo.jpeg"),
         id: 2,
       },

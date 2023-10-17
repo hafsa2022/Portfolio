@@ -1,9 +1,9 @@
 <template>
   <v-container class="containerMax mt-2"
     ><div class="mt-4 containt">
-      <v-row>
-        <v-col lg="5" md="12" sm="12" xs="12" class="">
-          <div class="mt-8 pt-10 image-container text-center">
+      <v-row justify="center">
+        <v-col lg="9" md="10" sm="10" xs="12" style="">
+          <div class="mt-8 pt-10 image-container">
             <v-img
               class="animated-image mx-auto"
               max-width="350"
@@ -22,9 +22,9 @@
               <v-icon color="green">mdi-map-marker</v-icon> Tangier,Morocco
             </h2>
           </div> -->
-        </v-col>
-        <v-col lg="5" md="12" sm="12" xs="12">
-          <div class="mt-4 pt-4">
+          <!-- </v-col> -->
+          <!-- <v-col lg="5" md="9" sm="9" xs="12"> -->
+          <div class="mt-2 pt-2">
             <v-card elevation="0" class="mt-16 ml-2 my-card-decoration">
               <template v-slot:title
                 ><span
@@ -34,6 +34,7 @@
                   Who I am ?
                 </span></template
               >
+
               <v-card-text class="text-h6 my-card-text text-left text-white">
                 <strong>Hello there</strong> ,<br />
                 My name is <strong>Hafsa El Akhdar</strong>, I'm a 6-month
@@ -61,6 +62,8 @@
                 ><br />
               </v-card-text>
             </v-card>
+            <!-- <v-col lg="5" md="9" sm="9" xs="12">
+          <div class="mt-4 pt-4"> -->
             <v-card elevation="0" class="ml-2 my-card-decoration">
               <template v-slot:title>
                 <span
@@ -80,7 +83,7 @@
       </v-row>
       <v-row>
         <v-col>
-          <v-card elevation="0" class="ml-2" style="background-color: #2b2b2c">
+          <v-card elevation="0" class="" style="background-color: #2b2b2c">
             <template v-slot:title>
               <span
                 style="font-size: 35px; color: #f7ce2de1"
@@ -220,6 +223,16 @@ export default {
   margin-bottom: 6px;
   height: 100%;
   width: 100%;
-  color: #fff;
+}
+@media (max-width: 1400px) {
+  *,
+  ::before,
+  ::after {
+    background-repeat: no-repeat;
+    box-sizing: content-box;
+  }
+  .containt {
+    padding: 10px 0px;
+  }
 }
 </style>
