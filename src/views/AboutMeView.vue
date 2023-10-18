@@ -1,9 +1,9 @@
 <template>
   <v-container class="containerMax mt-2"
     ><div class="mt-4 containt">
-      <v-row>
-        <v-col lg="5" md="6" sm="6" xs="12" class="">
-          <div class="mt-8 pt-10 image-container text-center">
+      <v-row justify="center">
+        <v-col lg="9" md="10" sm="10" xs="12" style="">
+          <div class="mt-8 pt-10 image-container">
             <v-img
               class="animated-image mx-auto"
               max-width="350"
@@ -22,9 +22,9 @@
               <v-icon color="green">mdi-map-marker</v-icon> Tangier,Morocco
             </h2>
           </div> -->
-        </v-col>
-        <v-col>
-          <div class="mt-4 pt-4">
+          <!-- </v-col> -->
+          <!-- <v-col lg="5" md="9" sm="9" xs="12"> -->
+          <div class="mt-2 pt-2">
             <v-card elevation="0" class="mt-16 ml-2 my-card-decoration">
               <template v-slot:title
                 ><span
@@ -34,22 +34,36 @@
                   Who I am ?
                 </span></template
               >
+
               <v-card-text class="text-h6 my-card-text text-left text-white">
                 <strong>Hello there</strong> ,<br />
                 My name is <strong>Hafsa El Akhdar</strong>, I'm a 6-month
                 experienced <strong>Software Engineer</strong> who enjoys
-                learning new technologies ...<br />
-                <v-btn class="mt-1" style="background-color: #2b2b2c"
-                  >read more</v-btn
+                learning new technologies.<span v-if="!readMore">..</span><br />
+                <div v-if="readMore">
+                  In this duration, I have learned a lot of technologies for
+                  example collecting data using Python, creating user interfaces
+                  using Vue.js and Vuetify, connecting to database PostgreSQL
+                  and SQLserver, and developing the apis using Laravel. <br />
+                  So I'm always seeking to have an opportunity that matches my
+                  skills, to make the best use of all that I have learned.
+                </div>
+
+                <v-btn
+                  class="mt-1"
+                  style="background-color: #2b2b2c; color: white"
+                  @click="readMore = !readMore"
+                  icon
+                  ><v-icon>
+                    {{
+                      readMore ? "mdi-chevron-up" : "mdi-chevron-down"
+                    }}</v-icon
+                  > </v-btn
                 ><br />
-                <!-- In this duration, I have learned a lot of technologies for
-                example collecting data using Python, creating user interfaces
-                using Vue.js and Vuetify, connecting to database PostgreSQL and
-                SQLserver, and developing the apis using Laravel. <br />
-                So I'm always seeking to have an opportunity that matches my
-                skills, to make the best use of all that I have learned. -->
               </v-card-text>
             </v-card>
+            <!-- <v-col lg="5" md="9" sm="9" xs="12">
+          <div class="mt-4 pt-4"> -->
             <v-card elevation="0" class="ml-2 my-card-decoration">
               <template v-slot:title>
                 <span
@@ -69,7 +83,7 @@
       </v-row>
       <v-row>
         <v-col>
-          <v-card elevation="0" class="ml-2" style="background-color: #2b2b2c">
+          <v-card elevation="0" class="" style="background-color: #2b2b2c">
             <template v-slot:title>
               <span
                 style="font-size: 35px; color: #f7ce2de1"
@@ -98,69 +112,71 @@ export default {
   name: "AboutView",
   data() {
     return {
+      readMore: false,
       skills: [
         {
           id: 1,
-          skillName: "HTML",
-          skillIcon: require("../assets/html.png"),
-        },
-        {
-          id: 2,
-          skillName: "CSS",
-          skillIcon: require("../assets/css.png"),
-        },
-        {
-          id: 3,
-          skillName: "Bootstrap",
-          skillIcon: require("../assets/bootstrap.png"),
-        },
-        {
-          id: 3,
           skillName: "JS",
           skillIcon: require("../assets/js.png"),
         },
         {
-          id: 4,
-          skillName: "Vuejs",
+          id: 2,
+          skillName: "Vue.js",
           skillIcon: require("../assets/vuejs.png"),
         },
         {
-          id: 5,
+          id: 3,
           skillName: "Vuex",
           skillIcon: require("../assets/vuex.png"),
         },
         {
-          id: 6,
+          id: 4,
           skillName: "Vuetify",
           skillIcon: require("../assets/vuetify.png"),
         },
         {
+          id: 5,
+          skillName: "HTML",
+          skillIcon: require("../assets/html.png"),
+        },
+        {
+          id: 6,
+          skillName: "CSS",
+          skillIcon: require("../assets/css.png"),
+        },
+        {
           id: 7,
-          skillName: "Php",
-          skillIcon: require("../assets/php.png"),
-        },
-        {
-          id: 8,
-          skillName: "PostgreSQL",
-          skillIcon: require("../assets/postgresql.png"),
-        },
-        {
-          id: 9,
-          skillName: "Python",
-          skillIcon: require("../assets/python.png"),
-        },
-        {
-          id: 10,
-          skillName: "C",
-          skillIcon: require("../assets/c.png"),
-        },
-        {
-          id: 11,
           skillName: "Laravel",
           skillIcon: require("../assets/laravel.png"),
         },
         {
+          id: 8,
+          skillName: "Python",
+          skillIcon: require("../assets/python.png"),
+        },
+        {
+          id: 9,
+          skillName: "PostgreSQL",
+          skillIcon: require("../assets/postgresql.png"),
+        },
+        {
+          id: 10,
+          skillName: "Bootstrap",
+          skillIcon: require("../assets/bootstrap.png"),
+        },
+
+        {
+          id: 11,
+          skillName: "Php",
+          skillIcon: require("../assets/php.png"),
+        },
+        {
           id: 12,
+          skillName: "C",
+          skillIcon: require("../assets/c.png"),
+        },
+        {
+          id: 13,
           skillName: "Google Maps",
           skillIcon: require("../assets/google maps.png"),
         },
@@ -174,9 +190,6 @@ export default {
 <style scoped>
 .containerMax {
   max-width: 2000px !important;
-  /* transform: translateX(-20px);
-  transition: transform 3s; */
-  /* background-color: rgba(184, 182, 109, 0.733); */
   background-color: #2b2b2c;
 }
 .my-card-text {
@@ -210,6 +223,16 @@ export default {
   margin-bottom: 6px;
   height: 100%;
   width: 100%;
-  color: #fff;
+}
+@media (max-width: 1400px) {
+  *,
+  ::before,
+  ::after {
+    background-repeat: no-repeat;
+    box-sizing: content-box;
+  }
+  .containt {
+    padding: 10px 0px;
+  }
 }
 </style>

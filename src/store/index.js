@@ -7,47 +7,8 @@ export default createStore({
       text: "",
       show: false,
     },
+    isResized: null,
     projects: [
-      {
-        projectUrl: "https://hafsa2022.github.io/",
-        projectName: " My Portfolio ",
-        projectGithub: "https://github.com/hafsa2022/Portfolio",
-        projectImg: require("../assets/portfolio_home.png"),
-        projectTechnologies: [
-          { technology: require("../assets/vuejs.png") },
-          { technology: require("../assets/vuex.png") },
-          { technology: require("../assets/vuetify.png") },
-          { technology: require("../assets/css.png") },
-          { technology: require("../assets/js.png") },
-        ],
-        id: 1,
-      },
-      {
-        projectUrl: "",
-        projectGithub:
-          "https://github.com/hafsa2022/Site-web-pour-gerer-les-annonces",
-        projectName: " Website to manage rental ads",
-        projectImg: require("../assets/newhome.png"),
-        projectTechnologies: [
-          { technology: require("../assets/php.png") },
-          { technology: require("../assets/html.png") },
-          { technology: require("../assets/css.png") },
-          { technology: require("../assets/js.png") },
-        ],
-        id: 2,
-      },
-      {
-        projectUrl: "",
-        projectName: "Simple Cruds ",
-        projectGithub: "https://github.com/hafsa2022/cruds-html-css-js",
-        projectImg: require("../assets/cruds.png"),
-        projectTechnologies: [
-          { technology: require("../assets/html.png") },
-          { technology: require("../assets/css.png") },
-          { technology: require("../assets/js.png") },
-        ],
-        id: 3,
-      },
       {
         projectUrl: "https://hafsa2022.github.io/contact-form-html-css/",
         projectName: " Contact Form",
@@ -57,17 +18,99 @@ export default createStore({
           { technology: require("../assets/html.png") },
           { technology: require("../assets/css.png") },
         ],
+        projectDesciption:
+          "Simple interactive contact ,its allows us to sending message ",
+        id: 1,
+      },
+      {
+        projectUrl: "",
+        projectName: "Simple Cruds ",
+        projectGithub: "https://github.com/hafsa2022/cruds-html-css-js",
+        projectImg: require("../assets/cruds.png"),
+        projectTechnologies: [
+          { technology: require("../assets/js.png") },
+          { technology: require("../assets/html.png") },
+          { technology: require("../assets/css.png") },
+        ],
+        projectDesciption:
+          "Bautiful Gruds allows you to adding, updating, deleting and Searching product",
+        id: 2,
+      },
+      {
+        projectUrl: "",
+        projectGithub:
+          "https://github.com/hafsa2022/Site-web-pour-gerer-les-annonces",
+        projectName: " Website to manage rental ads",
+        projectImg: require("../assets/newhome.png"),
+        projectTechnologies: [
+          { technology: require("../assets/js.png") },
+          { technology: require("../assets/html.png") },
+          { technology: require("../assets/css.png") },
+          { technology: require("../assets/php.png") },
+        ],
+        projectDesciption:
+          "Newhome is website allows you to adding or descovring new ads about appartements for rent  ",
+        id: 3,
+      },
+
+      {
+        projectUrl: "https://hafsa2022.github.io/",
+        projectName: " My Portfolio ",
+        projectGithub: "https://github.com/hafsa2022/Portfolio",
+        projectImg: require("../assets/portfolio_home.png"),
+        projectTechnologies: [
+          { technology: require("../assets/js.png") },
+          { technology: require("../assets/css.png") },
+          { technology: require("../assets/vuejs.png") },
+          { technology: require("../assets/vuetify.png") },
+          { technology: require("../assets/vuex.png") },
+        ],
+        projectDesciption:
+          "My portfolio descibe me such us my skills, my projects, my activities and more ",
         id: 4,
       },
       {
         projectUrl: "",
-        projectName: " Todo List ",
-        projectImg: "",
+        projectName: "Todo List",
+        projectGithub: "https://github.com/hafsa2022/todo-list",
+        projectImg: require("../assets/todoList.png"),
         projectTechnologies: [
           { technology: require("../assets/vuejs.png") },
           { technology: require("../assets/vuetify.png") },
         ],
+        projectDesciption:
+          "Simple Todo List for managing tasks allows you adding and remving tasks",
         id: 5,
+      },
+
+      {
+        projectUrl: "",
+        projectName: " Simple Geoportail",
+        projectGithub: "https://github.com/hafsa2022/mini-geoportail",
+        projectImg: require("../assets/geoportail_home.png"),
+        projectTechnologies: [
+          { technology: require("../assets/vuejs.png") },
+          { technology: require("../assets/vuetify.png") },
+        ],
+        projectDesciption:
+          "Simple Geoportail allows you to mapping an serach places and manipulating between layers ",
+        id: 6,
+      },
+      {
+        projectUrl: "",
+        projectName: "Product management",
+        projectGithub:
+          "https://github.com/hafsa2022/product-management-web-application-frontend",
+        projectImg: require("../assets/product-management-page.png"),
+        projectTechnologies: [
+          { technology: require("../assets/vuejs.png") },
+          { technology: require("../assets/vuetify.png") },
+          { technology: require("../assets/vuex.png") },
+          { technology: require("../assets/laravel.png") },
+        ],
+        projectDesciption:
+          "Website allows you to searching, creating, updating and deleting product",
+        id: 7,
       },
     ],
     activitiesOfTwc: [
@@ -101,7 +144,7 @@ export default createStore({
       },
 
       {
-        activityName: "  ",
+        activityName: "exchange day",
         activityImg: require("../assets/clubGéoinfo.jpeg"),
         id: 2,
       },
@@ -146,10 +189,16 @@ export default createStore({
       state.snackbar.text = payload.text;
       state.snackbar.show = payload.show;
     },
+    SET_IS_RESIZED(state, value) {
+      state.isResized = value;
+    },
   },
   actions: {
     setSnackBar({ commit }, payload) {
       commit("SET_SNACKBAR", payload);
+    },
+    setIsResized({ commit }, payload) {
+      commit("SET_IS_RESIZED", payload);
     },
   },
   modules: {},

@@ -1,9 +1,9 @@
 <template>
   <v-app>
     <NavBar />
-    <v-fade-transition>
-      <router-view />
-    </v-fade-transition>
+    <!-- <v-fade-transition> -->
+    <router-view />
+    <!-- </v-fade-transition> -->
     <MyFooter />
   </v-app>
 </template>
@@ -14,10 +14,7 @@ import MyFooter from "./components/MyFooter.vue";
 export default {
   name: "App",
 
-  data: () => ({
-    //
-  }),
+  data: () => ({}),
   components: { NavBar, MyFooter },
-  // components: { NavBar },
 };
 </script>
