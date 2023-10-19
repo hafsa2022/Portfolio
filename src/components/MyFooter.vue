@@ -1,33 +1,24 @@
 <template>
-  <v-footer style="background-color: #000">
-    <v-card
-      width="100%"
-      class="text-white text-center"
-      style="background-color: #000"
-      elevation="0"
+  <div class="w-100 text-center">
+    <a
+      target="_blank"
+      v-bind:href="social.url"
+      v-for="social in socials"
+      :key="social.id"
     >
-      <v-card-text class="">
-        <h1 class="py-2 text-black">You Can Find Us At</h1>
-        <a
-          target="_blank"
-          v-bind:href="social.url"
-          v-for="social in socials"
-          :key="social.id"
-        >
-          <v-btn class="ma-4" icon>
-            <v-icon size="24px" class="social-icon">{{ social.icon }}</v-icon>
-          </v-btn>
-        </a>
-      </v-card-text>
-
-      <v-card-text class="text-white">
+      <v-btn class="ma-4" icon>
+        <v-icon size="24px" class="social-icon">{{ social.icon }}</v-icon>
+      </v-btn>
+    </a>
+    <div>
+      <strong>
         Copyright {{ new Date().getFullYear() }}
-        <span class="text-white">- Hafsa El Akhdar </span>
+        <span class="text-balck">- Hafsa El Akhdar </span>
         |
-        <span class="typing-element"></span>
-      </v-card-text>
-    </v-card>
-  </v-footer>
+        <span class="typing-element"></span
+      ></strong>
+    </div>
+  </div>
 </template>
 
 <script>
