@@ -24,8 +24,8 @@
                   Member of the Together We Can Club
                 </h5>
                 <span class="text-left text-white" style="font-size: 16px"
-                  ><span style="color: #f7ce2de1">The T.W.C </span> The Club is
-                  a humanitarian club which brings together a circle of young
+                  ><span style="color: #f7ce2de1">The T.W.C club</span> is a
+                  humanitarian club which brings together a circle of young
                   students from different Moroccan higher education
                   <span v-if="readMore1">
                     establishments, with the common objective: The development
@@ -246,7 +246,7 @@ export default {
   /* margin-bottom: 12px; */
   height: 100%;
   width: 100%;
-  margin-top: 20px;
+  margin-top: -5px;
 }
 .text-decoration {
   color: #f7ce2de1;
