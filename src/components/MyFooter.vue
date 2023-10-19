@@ -10,7 +10,7 @@
         <v-icon size="24px" class="social-icon">{{ social.icon }}</v-icon>
       </v-btn>
     </a>
-    <div>
+    <div class="text-decoration">
       <strong>
         Copyright {{ new Date().getFullYear() }}
         <span class="text-balck">- Hafsa El Akhdar </span>
@@ -63,14 +63,8 @@ export default {
 </script>
 
 <style>
-.containerMax {
-  max-width: 2000px !important;
-  background-color: #1f1f21;
-}
-.v-footer {
-  padding: 10px 0px;
-  border-radius: 0px;
-  width: 100%;
+.text-decoration {
+  font-size: 20px;
 }
 .social-icon {
   font-size: 44px;
@@ -85,7 +79,14 @@ export default {
 .typing-element {
   color: #f7ce2de1;
 }
-.containt {
-  padding: 10px 300px;
+@media (max-width: 900px) {
+  .center-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .text-decoration {
+    font-size: 16px;
+  }
 }
 </style>
