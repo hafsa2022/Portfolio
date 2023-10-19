@@ -90,7 +90,6 @@
 
 <script>
 import Typed from "typed.js";
-// import MyFooter from "../components/MyFooter.vue";
 export default {
   name: "HomeView",
 
@@ -99,6 +98,23 @@ export default {
       srcImg: require("../assets/CP_hafsa.png"),
       isRevealed: false,
       windowWidth: null,
+      socials: [
+        {
+          name: "github",
+          icon: "mdi-github",
+          url: "https://github.com/hafsa2022",
+        },
+        {
+          name: "linkedin",
+          icon: "mdi-linkedin",
+          url: "https://www.linkedin.com/in/hafsa-el-akhdar-92b446198",
+        },
+        {
+          name: "instagram",
+          icon: "mdi-instagram",
+          url: "#",
+        },
+      ],
     };
   },
   components: {},

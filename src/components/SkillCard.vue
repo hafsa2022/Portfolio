@@ -10,8 +10,14 @@
         <v-card-title>
           <v-row
             ><v-col cols="12" class="mt-2"
-              ><img left :src="skill.skillIcon" width="70" height="70" /></v-col
-            ><v-col cols="12" class="mt-1 mx-1" width="">{{
+              ><img
+                left
+                :src="skill.skillIcon"
+                width="70"
+                height="70"
+                class="mx-auto px-0 center-content"
+                contain /></v-col
+            ><v-col cols="12" class="mt-1" width="">{{
               skill.skillName
             }}</v-col></v-row
           ></v-card-title

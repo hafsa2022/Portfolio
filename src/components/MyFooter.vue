@@ -1,12 +1,13 @@
 <template>
-  <v-footer dark padless style="background-color: #1f1f21">
+  <v-footer style="background-color: #000">
     <v-card
       width="100%"
       class="text-white text-center"
-      style="background-color: #1f1f21"
+      style="background-color: #000"
+      elevation="0"
     >
       <v-card-text class="">
-        <h1 class="py-2 text-white">You Can Find Us At</h1>
+        <h1 class="py-2 text-black">You Can Find Us At</h1>
         <a
           target="_blank"
           v-bind:href="social.url"
@@ -33,7 +34,6 @@
 import Typed from "typed.js";
 export default {
   data: () => ({
-    panel: [],
     socials: [
       {
         name: "github",
@@ -93,5 +93,8 @@ export default {
 }
 .typing-element {
   color: #f7ce2de1;
+}
+.containt {
+  padding: 10px 300px;
 }
 </style>

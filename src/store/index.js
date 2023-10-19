@@ -10,31 +10,20 @@ export default createStore({
     isResized: null,
     projects: [
       {
-        projectUrl: "https://hafsa2022.github.io/contact-form-html-css/",
-        projectName: " Contact Form",
-        projectGithub: "https://github.com/hafsa2022/contact-form-html-css",
-        projectImg: require("../assets/contact_form.png"),
-        projectTechnologies: [
-          { technology: require("../assets/html.png") },
-          { technology: require("../assets/css.png") },
-        ],
-        projectDesciption:
-          "Simple interactive contact ,its allows us to sending message ",
-        id: 1,
-      },
-      {
         projectUrl: "",
-        projectName: "Simple Cruds ",
-        projectGithub: "https://github.com/hafsa2022/cruds-html-css-js",
-        projectImg: require("../assets/cruds.png"),
+        projectName: "Product management application",
+        projectGithub:
+          "https://github.com/hafsa2022/product-management-web-application-frontend",
+        projectImg: require("../assets/product-management-page.png"),
         projectTechnologies: [
-          { technology: require("../assets/js.png") },
-          { technology: require("../assets/html.png") },
-          { technology: require("../assets/css.png") },
+          { technology: require("../assets/vuejs.png") },
+          { technology: require("../assets/vuetify.png") },
+          { technology: require("../assets/vuex.png") },
+          { technology: require("../assets/laravel.png") },
         ],
         projectDesciption:
-          "Bautiful Gruds allows you to adding, updating, deleting and Searching product",
-        id: 2,
+          "Website allows you to searching, creating, updating and deleting product",
+        id: 1,
       },
       {
         projectUrl: "",
@@ -50,11 +39,10 @@ export default createStore({
         ],
         projectDesciption:
           "Newhome is website allows you to adding or descovring new ads about appartements for rent  ",
-        id: 3,
+        id: 2,
       },
-
       {
-        projectUrl: "https://hafsa2022.github.io/",
+        projectUrl: "https://myportfolio-demo-opal.vercel.app/",
         projectName: " My Portfolio ",
         projectGithub: "https://github.com/hafsa2022/Portfolio",
         projectImg: require("../assets/portfolio_home.png"),
@@ -67,10 +55,25 @@ export default createStore({
         ],
         projectDesciption:
           "My portfolio descibe me such us my skills, my projects, my activities and more ",
-        id: 4,
+        id: 3,
       },
       {
         projectUrl: "",
+        projectName: "Simple Cruds ",
+        projectGithub: "https://github.com/hafsa2022/cruds-html-css-js",
+        projectImg: require("../assets/cruds.png"),
+        projectTechnologies: [
+          { technology: require("../assets/js.png") },
+          { technology: require("../assets/html.png") },
+          { technology: require("../assets/css.png") },
+        ],
+        projectDesciption:
+          "Bautiful Gruds allows you to adding, updating, deleting and Searching product",
+        id: 4,
+      },
+
+      {
+        projectUrl: "https://todo-list-pied-seven.vercel.app/",
         projectName: "Todo List",
         projectGithub: "https://github.com/hafsa2022/todo-list",
         projectImg: require("../assets/todoList.png"),
@@ -84,7 +87,7 @@ export default createStore({
       },
 
       {
-        projectUrl: "",
+        projectUrl: "https://mini-geoportail.vercel.app/",
         projectName: " Simple Geoportail",
         projectGithub: "https://github.com/hafsa2022/mini-geoportail",
         projectImg: require("../assets/geoportail_home.png"),
@@ -97,19 +100,16 @@ export default createStore({
         id: 6,
       },
       {
-        projectUrl: "",
-        projectName: "Product management",
-        projectGithub:
-          "https://github.com/hafsa2022/product-management-web-application-frontend",
-        projectImg: require("../assets/product-management-page.png"),
+        projectUrl: "https://hafsa2022.github.io/contact-form-html-css/",
+        projectName: " Contact Form",
+        projectGithub: "https://github.com/hafsa2022/contact-form-html-css",
+        projectImg: require("../assets/contact_form.png"),
         projectTechnologies: [
-          { technology: require("../assets/vuejs.png") },
-          { technology: require("../assets/vuetify.png") },
-          { technology: require("../assets/vuex.png") },
-          { technology: require("../assets/laravel.png") },
+          { technology: require("../assets/html.png") },
+          { technology: require("../assets/css.png") },
         ],
         projectDesciption:
-          "Website allows you to searching, creating, updating and deleting product",
+          "Simple interactive contact ,its allows us to sending message ",
         id: 7,
       },
     ],

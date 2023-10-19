@@ -126,6 +126,11 @@ export default {
         },
         {
           id: 3,
+          skillName: "Angular.js",
+          skillIcon: require("../assets/AngularJs.png"),
+        },
+        {
+          id: 3,
           skillName: "Vuex",
           skillIcon: require("../assets/vuex.png"),
         },
