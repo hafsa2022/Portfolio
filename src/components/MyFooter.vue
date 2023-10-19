@@ -1,15 +1,18 @@
 <template>
   <div class="w-100 text-center">
-    <a
-      target="_blank"
-      v-bind:href="social.url"
-      v-for="social in socials"
-      :key="social.id"
-    >
-      <v-btn class="ma-4" icon>
-        <v-icon size="24px" class="social-icon">{{ social.icon }}</v-icon>
-      </v-btn>
-    </a>
+    <div class="text-dec">
+      <a
+        target="_blank"
+        v-bind:href="social.url"
+        v-for="social in socials"
+        :key="social.id"
+      >
+        <v-btn class="ma-4" icon>
+          <v-icon size="24px" class="social-icon">{{ social.icon }}</v-icon>
+        </v-btn>
+      </a>
+    </div>
+
     <div class="text-decoration">
       <strong>
         Copyright {{ new Date().getFullYear() }}
@@ -86,7 +89,11 @@ export default {
     align-items: center;
   }
   .text-decoration {
-    font-size: 16px;
+    font-size: 13px;
+    padding-left: 25px;
+  }
+  .text-dec {
+    padding-left: 25px;
   }
 }
 </style>
