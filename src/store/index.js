@@ -22,7 +22,7 @@ export default createStore({
           { technology: require("../assets/laravel.png") },
         ],
         projectDesciption:
-          "Website allows you to searching, creating, updating and deleting product",
+          "Web application allows you to searching, creating, updating and deleting product",
         id: 1,
       },
       {
@@ -38,7 +38,7 @@ export default createStore({
           { technology: require("../assets/php.png") },
         ],
         projectDesciption:
-          "Newhome is website allows you to adding or descovring new ads about appartements for rent  ",
+          "Newhome is website presente ads or about appartements for rent and it allows you to adding new ads ",
         id: 2,
       },
       {
@@ -54,7 +54,7 @@ export default createStore({
           { technology: require("../assets/vuex.png") },
         ],
         projectDesciption:
-          "My portfolio descibe me such us my skills, my projects, my activities and more ",
+          "My portfolio give you idea about my skills, my projects, my activities and more ",
         id: 3,
       },
       {
@@ -68,7 +68,7 @@ export default createStore({
           { technology: require("../assets/css.png") },
         ],
         projectDesciption:
-          "Bautiful Gruds allows you to adding, updating, deleting and Searching product",
+          "Bautiful Gruds allows you to adding, updating, deleting and searching product",
         id: 4,
       },
 
@@ -82,7 +82,7 @@ export default createStore({
           { technology: require("../assets/vuetify.png") },
         ],
         projectDesciption:
-          "Simple Todo List for managing tasks allows you adding and remving tasks",
+          "Simple Todo List for managing tasks,its allows you adding and removing tasks",
         id: 5,
       },
 
@@ -96,7 +96,7 @@ export default createStore({
           { technology: require("../assets/vuetify.png") },
         ],
         projectDesciption:
-          "Simple Geoportail allows you to mapping an serach places and manipulating between layers ",
+          "Simple Geoportail allows you to mapping an search places and manipulating between layers ",
         id: 6,
       },
       {
@@ -109,7 +109,7 @@ export default createStore({
           { technology: require("../assets/css.png") },
         ],
         projectDesciption:
-          "Simple interactive contact ,its allows us to sending message ",
+          "Simple interactive contact form ,its allows us to sending message ",
         id: 7,
       },
     ],

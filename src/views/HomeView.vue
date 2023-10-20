@@ -45,8 +45,8 @@
             <br />
             <div class="text-left btns">
               <a
-                href="https://drive.google.com/file/d/16tARTAwK6nJZZDtwqbEpXt8NGO_g0ku9/view?usp=sharing"
-                download="download.pdf"
+                href="https://drive.google.com/file/d/1tTPkVyfaMyqaV-87HCqV1N4g1PsSJsjX/view?usp=sharing"
+                download="download_cv.pdf"
               >
                 <v-btn
                   tile
