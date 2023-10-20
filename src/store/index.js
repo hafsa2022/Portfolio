@@ -115,7 +115,7 @@ export default createStore({
     ],
     activitiesOfTwc: [
       {
-        activityName: "Meeting with members of Club Together We Can",
+        activityName: "Meeting with Club Together We Can members ",
         activityImg: require("../assets/meeting_img.jpeg"),
         id: 1,
       },
