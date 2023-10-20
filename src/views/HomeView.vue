@@ -247,7 +247,7 @@ export default {
   }
   .my-text {
     letter-spacing: 3px;
-    font-size: 1.4em;
+    font-size: 1.8em;
   }
   .v-img {
     margin: auto;
