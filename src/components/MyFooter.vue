@@ -16,7 +16,7 @@
     <div class="text-decoration">
       <strong>
         Copyright {{ new Date().getFullYear() }}
-        <span class="text-balck">- Hafsa El Akhdar </span>
+        <span style="color: #1f1f21">- Hafsa El Akhdar </span>
         |
         <span class="typing-element"></span
       ></strong>
@@ -71,7 +71,6 @@ export default {
 }
 .social-icon {
   font-size: 44px;
-  /* margin-right: 10px; */
   transition: transform 1s ease-in-out;
   color: #1f1f21;
 }
