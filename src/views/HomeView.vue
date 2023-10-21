@@ -45,7 +45,7 @@
             <br />
             <div class="text-left btns">
               <a
-                href="https://drive.google.com/file/d/1tTPkVyfaMyqaV-87HCqV1N4g1PsSJsjX/view?usp=sharing"
+                href="https://drive.google.com/file/d/1OrasUgPC1qOTgSBgSxhluCRDUm0Ydbjs/view?usp=sharing"
                 download="download_cv.pdf"
               >
                 <v-btn
