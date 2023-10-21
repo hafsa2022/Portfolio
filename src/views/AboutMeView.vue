@@ -126,8 +126,8 @@ export default {
         },
         {
           id: 3,
-          skillName: "Angular.js",
-          skillIcon: require("../assets/AngularJs.png"),
+          skillName: "Angular",
+          skillIcon: require("../assets/Angular.png"),
         },
         {
           id: 3,
