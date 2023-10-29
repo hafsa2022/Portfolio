@@ -1,5 +1,5 @@
 <template>
-  <v-container class="containerMax pb-8">
+  <v-container class="containerMax pb-16 mt-4">
     <div style="margin-top: 40px" class="containt">
       <v-card
         width="80%"

@@ -1,6 +1,6 @@
 <template>
   <v-container class="containerMax mt-14">
-    <div style="background-color: #2b2b2c" class="containt">
+    <div style="background-color: #2b2b2c" class="containt mt-6">
       <v-row style="background-color: #2b2b2c">
         <v-card
           elevation="0"
