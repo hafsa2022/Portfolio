@@ -161,27 +161,37 @@ export default {
         },
         {
           id: 9,
+          skillName: "Github",
+          skillIcon: require("../assets/GitHub-logo.png"),
+        },
+        {
+          id: 10,
+          skillName: "Docker",
+          skillIcon: require("../assets/docker.png"),
+        },
+        {
+          id: 11,
           skillName: "PostgreSQL",
           skillIcon: require("../assets/postgresql.png"),
         },
         {
-          id: 10,
+          id: 12,
           skillName: "Bootstrap",
           skillIcon: require("../assets/bootstrap.png"),
         },
 
         {
-          id: 11,
+          id: 13,
           skillName: "Php",
           skillIcon: require("../assets/php.png"),
         },
         {
-          id: 12,
+          id: 14,
           skillName: "C",
           skillIcon: require("../assets/c.png"),
         },
         {
-          id: 13,
+          id: 15,
           skillName: "Google Maps",
           skillIcon: require("../assets/google maps.png"),
         },

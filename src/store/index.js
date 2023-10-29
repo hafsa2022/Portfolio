@@ -100,6 +100,24 @@ export default createStore({
         id: 6,
       },
       {
+        projectUrl: "",
+        projectName: " Employee Management Application",
+        projectGithub:
+          "https://github.com/hafsa2022/employee-managemant-system",
+        projectImg: require("../assets/employee-management-app.png"),
+        projectTechnologies: [
+          { technology: require("../assets/html.png") },
+          { technology: require("../assets/css.png") },
+          { technology: require("../assets/Angular.png") },
+          {
+            technology: require("../assets/angular_material.png"),
+          },
+        ],
+        projectDesciption:
+          "Simple crud allows us to add, deletemate, update employee",
+        id: 7,
+      },
+      {
         projectUrl: "https://hafsa2022.github.io/contact-form-html-css/",
         projectName: " Contact Form",
         projectGithub: "https://github.com/hafsa2022/contact-form-html-css",
@@ -110,7 +128,7 @@ export default createStore({
         ],
         projectDesciption:
           "Simple interactive contact form ,its allows us to sending message ",
-        id: 7,
+        id: 8,
       },
     ],
     activitiesOfTwc: [
