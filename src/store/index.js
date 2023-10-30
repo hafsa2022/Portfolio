@@ -22,7 +22,7 @@ export default createStore({
           { technology: require("../assets/laravel.png") },
         ],
         projectDesciption:
-          "Web application allows you to searching, creating, updating and deleting product",
+          "Web application allows us to search, create, update and delete product",
         id: 1,
       },
       {
@@ -38,7 +38,7 @@ export default createStore({
           { technology: require("../assets/php.png") },
         ],
         projectDesciption:
-          "Newhome is website presente ads or about appartements for rent and it allows you to adding new ads ",
+          "Newhome is website present ads or about appartements for rent and it allows us to add new ads ",
         id: 2,
       },
       {
@@ -54,7 +54,7 @@ export default createStore({
           { technology: require("../assets/vuex.png") },
         ],
         projectDesciption:
-          "My portfolio give you idea about my skills, my projects, my activities and more ",
+          "My portfolio gives you idea about my skills, my projects, my activities and more ",
         id: 3,
       },
       {
@@ -68,7 +68,7 @@ export default createStore({
           { technology: require("../assets/css.png") },
         ],
         projectDesciption:
-          "Bautiful Gruds allows you to adding, updating, deleting and searching product",
+          "Bautiful Gruds allows us to add, update, delete and search product",
         id: 4,
       },
 
@@ -82,7 +82,7 @@ export default createStore({
           { technology: require("../assets/vuetify.png") },
         ],
         projectDesciption:
-          "Simple Todo List for managing tasks,its allows you adding and removing tasks",
+          "Simple Todo List allows us to manage tasks, add and remove tasks",
         id: 5,
       },
 
@@ -96,14 +96,13 @@ export default createStore({
           { technology: require("../assets/vuetify.png") },
         ],
         projectDesciption:
-          "Simple Geoportail allows you to mapping an search places and manipulating between layers ",
+          "Simple Geoportail allows us to map, search places and manipulate between layers ",
         id: 6,
       },
       {
         projectUrl: "",
-        projectName: " Employee Management Application",
-        projectGithub:
-          "https://github.com/hafsa2022/employee-managemant-app",
+        projectName: " Employee Management App",
+        projectGithub: "https://github.com/hafsa2022/employee-managemant-app",
         projectImg: require("../assets/employee-management-app.png"),
         projectTechnologies: [
           { technology: require("../assets/html.png") },
@@ -114,7 +113,7 @@ export default createStore({
           },
         ],
         projectDesciption:
-          "Simple crud allows us to add, deletemate, update employee",
+          "Simple crud allows us to add, delete and update employee",
         id: 7,
       },
       {
@@ -127,7 +126,7 @@ export default createStore({
           { technology: require("../assets/css.png") },
         ],
         projectDesciption:
-          "Simple interactive contact form ,its allows us to sending message ",
+          "Simple interactive contact form allows us to send message ",
         id: 8,
       },
     ],
