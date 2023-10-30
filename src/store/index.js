@@ -103,7 +103,7 @@ export default createStore({
         projectUrl: "",
         projectName: " Employee Management Application",
         projectGithub:
-          "https://github.com/hafsa2022/employee-managemant-system",
+          "https://github.com/hafsa2022/employee-managemant-app",
         projectImg: require("../assets/employee-management-app.png"),
         projectTechnologies: [
           { technology: require("../assets/html.png") },
