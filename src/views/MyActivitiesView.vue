@@ -243,7 +243,6 @@ export default {
   position: relative;
   text-align: center;
   padding: 10px 300px;
-  /* margin-bottom: 12px; */
   height: 100%;
   width: 100%;
   margin-top: -5px;
@@ -269,10 +268,6 @@ export default {
 .v-list {
   background-color: #2b2b2c;
 }
-/* .v-slide-group__next,
-.v-slide-group__prev {
-  color: white;
-} */
 .img-decoration {
   transition: transform 1s ease-in-out;
 }

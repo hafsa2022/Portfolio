@@ -187,10 +187,6 @@ export default {
             user_phoneNumber: this.phoneNumber,
           })
           .then((response) => {
-            // this.fullName = "";
-            // this.emailAddress = "";
-            // this.message = "";
-            // this.phoneNumber = 0;
             this.loading = false;
             this.$store.dispatch("setSnackBar", {
               color: "#09ee90",
