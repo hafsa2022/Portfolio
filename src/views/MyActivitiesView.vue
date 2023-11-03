@@ -12,12 +12,13 @@
             style="font-size: 35px; color: #f7ce2de1"
             class="span-decoration text-center"
             >My Activities</v-card-title
-          ><span class="text-grey mt-4"
-            >It is important in our lives to develop our skills through
-            associative activities for this reason i integrated into the
-            clubs</span
           >
-          <v-card-text class="text-h5">
+          <v-card-text class="">
+            <span class="text-grey"
+              >It is important in our lives to develop our skills through
+              associative activities for this reason i integrated into the
+              clubs</span
+            >
             <v-template>
               <v-list-item title="" class="mb-10 mt-10">
                 <h5 class="mb-10 text-decoration">
@@ -242,7 +243,7 @@ export default {
 .containt {
   position: relative;
   text-align: center;
-  padding: 10px 300px;
+  padding: 0px 300px;
   height: 100%;
   width: 100%;
   margin-top: -5px;
@@ -282,7 +283,7 @@ export default {
     box-sizing: content-box;
   }
   .containt {
-    padding: 10px 0px;
+    padding: 0px 0px;
     margin-bottom: 0px;
   }
 }

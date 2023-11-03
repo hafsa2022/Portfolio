@@ -8,7 +8,7 @@
             class="span-decoration"
             >My Projects</v-card-title
           >
-          <v-card-text class="text-grey"
+          <v-card-text class="text-grey mt-0"
             >My portfolio is a series of stairs to expertise, with each project
             a step that has brought me closer to mastery</v-card-text
           ></v-col
