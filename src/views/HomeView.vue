@@ -208,14 +208,6 @@ export default {
     letter-spacing: 3px;
     font-size: 2em;
   }
-  /* .btn-contact {
-    font-size: 12px;
-    font-weight: 600;
-  }
-  .btn-download {
-    font-size: 12px;
-    font-weight: 600;
-  } */
   .social-icon {
     font-size: 32px;
   }
