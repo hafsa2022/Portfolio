@@ -21,9 +21,25 @@ export default createStore({
           { technology: require("../assets/vuex.png") },
           { technology: require("../assets/laravel.png") },
         ],
-        projectDesciption:
+        projectDescription:
           "Web application allows us to search, create, update and delete product",
         id: 1,
+      },
+      {
+        projectUrl: "",
+        projectGithub:
+          "https://github.com/hafsa2022/job-board-angular-laravel.git",
+        projectName: " Job board",
+        projectImg: require("../assets/job-board.png"),
+        projectTechnologies: [
+          { technology: require("../assets/Angular.png") },
+          { technology: require("../assets/bootstrap.png") },
+          { technology: require("../assets/jwt.png") },
+          { technology: require("../assets/laravel.png") },
+        ],
+        projectDescription:
+          "Job Dream allows us to search and get new opprtunities easy and fast ",
+        id: 2,
       },
       {
         projectUrl: "",
@@ -37,10 +53,11 @@ export default createStore({
           { technology: require("../assets/css.png") },
           { technology: require("../assets/php.png") },
         ],
-        projectDesciption:
+        projectDescription:
           "Newhome is website present ads or about appartements for rent and it allows us to add new ads ",
-        id: 2,
+        id: 3,
       },
+
       {
         projectUrl: "https://myportfolio-demo-opal.vercel.app/",
         projectName: " My Portfolio ",
@@ -53,9 +70,9 @@ export default createStore({
           { technology: require("../assets/vuetify.png") },
           { technology: require("../assets/vuex.png") },
         ],
-        projectDesciption:
+        projectDescription:
           "My portfolio gives you idea about my skills, my projects, my activities and more ",
-        id: 3,
+        id: 4,
       },
       {
         projectUrl: "",
@@ -67,9 +84,9 @@ export default createStore({
           { technology: require("../assets/html.png") },
           { technology: require("../assets/css.png") },
         ],
-        projectDesciption:
+        projectDescription:
           "Bautiful Gruds allows us to add, update, delete and search product",
-        id: 4,
+        id: 5,
       },
 
       {
@@ -81,9 +98,9 @@ export default createStore({
           { technology: require("../assets/vuejs.png") },
           { technology: require("../assets/vuetify.png") },
         ],
-        projectDesciption:
+        projectDescription:
           "Simple Todo List allows us to manage tasks, add and remove tasks",
-        id: 5,
+        id: 6,
       },
 
       {
@@ -95,9 +112,9 @@ export default createStore({
           { technology: require("../assets/vuejs.png") },
           { technology: require("../assets/vuetify.png") },
         ],
-        projectDesciption:
+        projectDescription:
           "Simple Geoportail allows us to map, search places and manipulate between layers ",
-        id: 6,
+        id: 7,
       },
       {
         projectUrl: "",
@@ -112,9 +129,9 @@ export default createStore({
             technology: require("../assets/angular_material.png"),
           },
         ],
-        projectDesciption:
-          "Simple crud allows us to add, delete and update employee",
-        id: 7,
+        projectDescription:
+          "Simple cruds allows us to add, delete and update employee",
+        id: 8,
       },
       {
         projectUrl: "https://hafsa2022.github.io/contact-form-html-css/",
@@ -125,9 +142,9 @@ export default createStore({
           { technology: require("../assets/html.png") },
           { technology: require("../assets/css.png") },
         ],
-        projectDesciption:
+        projectDescription:
           "Simple interactive contact form allows us to send message ",
-        id: 8,
+        id: 9,
       },
     ],
     activitiesOfTwc: [

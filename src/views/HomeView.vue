@@ -38,7 +38,7 @@
               <span class="text-grey">Best Welcome To My Portfolio !</span
               ><br />
               <span class="text-grey"
-                >This Work Resume All Information About Me !</span
+                >This Work Resume All Informations About Me !</span
               >
             </div>
 
