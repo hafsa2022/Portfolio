@@ -4,11 +4,18 @@
       <v-card class="rounded-lg" elevation="3" width="100%">
         <img :src="project.projectImg" height="250" class="img-decoration" />
         <v-card-title class="text-wrap">{{ project.projectName }}</v-card-title>
-        <v-card-text class="text-gray">{{
-          project.projectDescription.length > 90
-            ? project.projectDescription.substring(0, 90) + " ..."
-            : project.projectDescription
-        }}</v-card-text>
+        <v-card-text
+          class="text-gray truncatedText"
+          @click="isTruncated = !isTruncated"
+        >
+          {{
+            isTruncated
+              ? project.projectDescription.length > 50
+                ? project.projectDescription.substring(0, 50) + " ..."
+                : project.projectDescription
+              : project.projectDescription
+          }}</v-card-text
+        >
         <v-card-actions class="mx-auto" height="50">
           <v-row class=""
             ><v-col lg="6" md="12" v-if="project.projectUrl != ''">
@@ -58,16 +65,23 @@
 <script>
 export default {
   name: "CardComponent",
+  data() {
+    return {
+      isTruncated: true,
+    };
+  },
   props: {
     project: {
       type: Object,
       default: null,
-      CaraLength: 20,
     },
   },
 };
 </script>
 <style>
+.truncatedText {
+  cursor: pointer;
+}
 .text-wrap {
   white-space: pre-wrap;
 }
