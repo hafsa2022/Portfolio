@@ -5,7 +5,9 @@
         <img :src="project.projectImg" height="250" class="img-decoration" />
         <v-card-title class="text-wrap">{{ project.projectName }}</v-card-title>
         <v-card-text class="text-gray">{{
-          project.projectDesciption
+          project.projectDescription.length > 90
+            ? project.projectDescription.substring(0, 90) + " ..."
+            : project.projectDescription
         }}</v-card-text>
         <v-card-actions class="mx-auto" height="50">
           <v-row class=""
@@ -60,6 +62,7 @@ export default {
     project: {
       type: Object,
       default: null,
+      CaraLength: 20,
     },
   },
 };
