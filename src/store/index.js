@@ -130,7 +130,7 @@ export default createStore({
           },
         ],
         projectDescription:
-          "Simple cruds allows us to add, delete and update employee",
+          "Simple cruds allows us to add, update, delete and search employee",
         id: 8,
       },
       {
