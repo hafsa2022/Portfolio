@@ -32,7 +32,7 @@ export default createStore({
         projectName: " Job board",
         projectImg: require("../assets/job-board.png"),
         projectTechnologies: [
-          { technology: require("../assets/Angular.png") },
+          { technology: require("../assets/angular.png") },
           { technology: require("../assets/bootstrap.png") },
           { technology: require("../assets/jwt.png") },
           { technology: require("../assets/laravel.png") },
@@ -111,6 +111,7 @@ export default createStore({
         projectTechnologies: [
           { technology: require("../assets/vuejs.png") },
           { technology: require("../assets/vuetify.png") },
+          { technology: require("../assets/leaflet.png") },
         ],
         projectDescription:
           "Simple Geoportail allows us to map, search places and manipulate between layers ",
@@ -124,7 +125,7 @@ export default createStore({
         projectTechnologies: [
           { technology: require("../assets/html.png") },
           { technology: require("../assets/css.png") },
-          { technology: require("../assets/Angular.png") },
+          { technology: require("../assets/angular.png") },
           {
             technology: require("../assets/angular_material.png"),
           },
@@ -145,6 +146,22 @@ export default createStore({
         projectDescription:
           "Simple interactive contact form allows us to send message ",
         id: 9,
+      },
+      {
+        projectUrl: "",
+        projectName: " Product Management System",
+        projectGithub: "https://github.com/hafsa2022/product-management-system",
+        projectImg: require("../assets/product_management_sys_cap.png"),
+        projectTechnologies: [
+          { technology: require("../assets/css.png") },
+          { technology: require("../assets/angular.png") },
+          { technology: require("../assets/spring_boot.png") },
+          { technology: require("../assets/mariaDB.png") },
+          { technology: require("../assets/bootstrap.png") },
+        ],
+        projectDescription:
+          "Simple app web for managing product using Angular and Spring Boot",
+        id: 10,
       },
     ],
     activitiesOfTwc: [

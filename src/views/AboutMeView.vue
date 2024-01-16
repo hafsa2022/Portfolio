@@ -121,79 +121,101 @@ export default {
         },
         {
           id: 2,
-          skillName: "Vue.js",
-          skillIcon: require("../assets/vuejs.png"),
-        },
-        {
-          id: 3,
-          skillName: "Angular",
-          skillIcon: require("../assets/Angular.png"),
-        },
-        {
-          id: 3,
-          skillName: "Vuex",
-          skillIcon: require("../assets/vuex.png"),
-        },
-        {
-          id: 4,
-          skillName: "Vuetify",
-          skillIcon: require("../assets/vuetify.png"),
-        },
-        {
-          id: 5,
           skillName: "HTML",
           skillIcon: require("../assets/html.png"),
         },
         {
-          id: 6,
+          id: 3,
           skillName: "CSS",
           skillIcon: require("../assets/css.png"),
         },
         {
-          id: 7,
-          skillName: "Laravel",
-          skillIcon: require("../assets/laravel.png"),
-        },
-        {
-          id: 8,
+          id: 4,
           skillName: "Python",
           skillIcon: require("../assets/python.png"),
         },
         {
+          id: 5,
+          skillName: "Sql",
+          skillIcon: require("../assets/sql.png"),
+        },
+        {
+          id: 6,
+          skillName: "Java",
+          skillIcon: require("../assets/java.png"),
+        },
+        {
+          id: 7,
+          skillName: "C",
+          skillIcon: require("../assets/c.png"),
+        },
+        {
+          id: 8,
+          skillName: "PHP",
+          skillIcon: require("../assets/php.png"),
+        },
+        {
           id: 9,
-          skillName: "Github",
-          skillIcon: require("../assets/GitHub-logo.png"),
-        },
-        {
-          id: 10,
-          skillName: "Docker",
-          skillIcon: require("../assets/docker.png"),
-        },
-        {
-          id: 11,
           skillName: "PostgreSQL",
           skillIcon: require("../assets/postgresql.png"),
         },
         {
+          id: 10,
+          skillName: "Angular",
+          skillIcon: require("../assets/angular.png"),
+        },
+        {
+          id: 11,
+          skillName: "Vue.js",
+          skillIcon: require("../assets/vuejs.png"),
+        },
+        {
           id: 12,
+          skillName: "Spring Boot",
+          skillIcon: require("../assets/spring_boot.png"),
+        },
+        {
+          id: 13,
+          skillName: "Laravel",
+          skillIcon: require("../assets/laravel.png"),
+        },
+        {
+          id: 14,
+          skillName: "Docker",
+          skillIcon: require("../assets/docker.png"),
+        },
+        {
+          id: 15,
+          skillName: "Github",
+          skillIcon: require("../assets/GitHub-logo.png"),
+        },
+
+        {
+          id: 16,
+          skillName: "Vuex",
+          skillIcon: require("../assets/vuex.png"),
+        },
+        {
+          id: 17,
+          skillName: "Vuetify",
+          skillIcon: require("../assets/vuetify.png"),
+        },
+
+        {
+          id: 18,
           skillName: "Bootstrap",
           skillIcon: require("../assets/bootstrap.png"),
         },
 
         {
-          id: 13,
-          skillName: "Php",
-          skillIcon: require("../assets/php.png"),
-        },
-        {
-          id: 14,
-          skillName: "C",
-          skillIcon: require("../assets/c.png"),
-        },
-        {
-          id: 15,
+          id: 19,
           skillName: "Google Maps",
-          skillIcon: require("../assets/google maps.png"),
+          skillIcon: require("../assets/google_maps.png"),
+        },
+        {
+          id: 20,
+          skillName: "Leaflet",
+          skillIcon: require("../assets/leaflet.png"),
         },
       ],
     };
