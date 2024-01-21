@@ -163,6 +163,21 @@ export default createStore({
           "Simple app web for managing product using Angular and Spring Boot",
         id: 10,
       },
+      {
+        projectUrl: "",
+        projectName: " Registration Form",
+        projectGithub: "https://github.com/hafsa2022/registration-form",
+        projectImg: require("../assets/registration-form.png"),
+        projectTechnologies: [
+          { technology: require("../assets/css.png") },
+          { technology: require("../assets/angular.png") },
+          { technology: require("../assets/spring_boot.png") },
+          { technology: require("../assets/mariaDB.png") },
+        ],
+        projectDescription:
+          "a simple registration form developed using Angular, Spring Boot and MariaDB. This application makes it easy to validate user information before it is added to the database.",
+        id: 11,
+      },
     ],
     activitiesOfTwc: [
       {
