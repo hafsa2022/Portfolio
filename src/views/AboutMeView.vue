@@ -12,18 +12,6 @@
             >
             </v-img>
           </div>
-          <!-- <div class="mt-4 ml-4">
-            <h2><v-icon color="green">mdi-account</v-icon> Hafsa El Akhdar</h2>
-            <h2><v-icon color="green">mdi-calendar</v-icon> June 24, 2000</h2>
-            <h2>
-              <v-icon color="green">mdi-gmail</v-icon> h.hafsaelakhdar@gmail.com
-            </h2>
-            <h2>
-              <v-icon color="green">mdi-map-marker</v-icon> Tangier,Morocco
-            </h2>
-          </div> -->
-          <!-- </v-col> -->
-          <!-- <v-col lg="5" md="9" sm="9" xs="12"> -->
           <div class="mt-2 pt-2">
             <v-card elevation="0" class="mt-16 ml-2 my-card-decoration">
               <template v-slot:title
@@ -37,16 +25,20 @@
 
               <v-card-text class="text-h6 my-card-text text-left text-white">
                 <strong>Hello there</strong> ,<br />
-                My name is <strong>Hafsa El Akhdar</strong>, I'm a 6-month
-                experienced <strong>Software Engineer</strong> who enjoys
-                learning new technologies.<span v-if="!readMore">..</span><br />
+                My name is <strong>Hafsa El akhdar</strong>.Throughout my
+                internships and training, I've had the privilege of delving into
+                diverse technologies. <span v-if="!readMore">..</span><br />
                 <div v-if="readMore">
-                  In this duration, I have learned a lot of technologies for
-                  example collecting data using Python, creating user interfaces
-                  using Vue.js and Vuetify, connecting to database PostgreSQL
-                  and SQLserver, and developing the apis using Laravel. <br />
-                  So I'm always seeking to have an opportunity that matches my
-                  skills, to make the best use of all that I have learned.
+                  Over this period, I've gained proficiency in various languages
+                  and frameworks, including JavaScript, HTML, CSS, Python,
+                  SQL, Java, C, PHP, Angular, Vue.js, Spring Boot, Laravel, and
+                  Bootstrap...<br/> These experiences have not only broadened my
+                  technical expertise but have also honed my problem-solving
+                  skills. They attest to my capability to swiftly grasp
+                  intricate technical concepts. I am consistently on the lookout
+                  for opportunities that align with my skills, where I can
+                  leverage my knowledge to the fullest.<br/><br/> Best regards, <br/>Hafsa El
+                  akhdar.
                 </div>
 
                 <v-btn
@@ -75,7 +67,7 @@
               <v-card-text class="text-h6 my-card-text text-left text-white">
                 I am a freshly graduated engineer from the Faculty of Science
                 and Technology of Tangier in
-                <strong>Geoinormation</strong>.</v-card-text
+                <strong>Geoinformation</strong>.</v-card-text
               >
             </v-card>
           </div>
