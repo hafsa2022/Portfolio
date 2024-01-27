@@ -37,9 +37,7 @@
             <div style="margin-top: 20px">
               <span class="text-grey">Best Welcome To My Portfolio !</span
               ><br />
-              <span class="text-grey"
-                >This Work Resume My Informations !</span
-              >
+              <span class="text-grey">This Work Resume My Informations !</span>
             </div>
 
             <br />

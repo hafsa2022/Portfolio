@@ -30,15 +30,16 @@
                 diverse technologies. <span v-if="!readMore">..</span><br />
                 <div v-if="readMore">
                   Over this period, I've gained proficiency in various languages
-                  and frameworks, including JavaScript, HTML, CSS, Python,
-                  SQL, Java, C, PHP, Angular, Vue.js, Spring Boot, Laravel, and
-                  Bootstrap...<br/> These experiences have not only broadened my
-                  technical expertise but have also honed my problem-solving
-                  skills. They attest to my capability to swiftly grasp
-                  intricate technical concepts. I am consistently on the lookout
-                  for opportunities that align with my skills, where I can
-                  leverage my knowledge to the fullest.<br/><br/> Best regards, <br/>Hafsa El
-                  akhdar.
+                  and frameworks, including JavaScript, HTML, CSS, Python, SQL,
+                  Java, C, PHP, Angular, Vue.js, Spring Boot, Laravel, and
+                  Bootstrap...<br />
+                  These experiences have not only broadened my technical
+                  expertise but have also honed my problem-solving skills. They
+                  attest to my capability to swiftly grasp intricate technical
+                  concepts. I am consistently on the lookout for opportunities
+                  that align with my skills, where I can leverage my knowledge
+                  to the fullest.<br /><br />
+                  Best regards, <br />Hafsa El akhdar.
                 </div>
 
                 <v-btn
