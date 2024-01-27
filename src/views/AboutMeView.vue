@@ -155,7 +155,7 @@ export default {
         {
           id: 10,
           skillName: "Angular",
-          skillIcon: require("../assets/angular.png"),
+          skillIcon: require("../assets/angular_logo.png"),
         },
         {
           id: 11,
