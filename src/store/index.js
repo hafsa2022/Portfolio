@@ -32,7 +32,7 @@ export default createStore({
         projectName: " Job board",
         projectImg: require("../assets/job-board.png"),
         projectTechnologies: [
-          { technology: require("../assets/angular.png") },
+          { technology: require("../assets/angular_logo.png") },
           { technology: require("../assets/bootstrap.png") },
           { technology: require("../assets/jwt.png") },
           { technology: require("../assets/laravel.png") },
@@ -125,7 +125,7 @@ export default createStore({
         projectTechnologies: [
           { technology: require("../assets/html.png") },
           { technology: require("../assets/css.png") },
-          { technology: require("../assets/angular.png") },
+          { technology: require("../assets/angular_logo.png") },
           {
             technology: require("../assets/angular_material.png"),
           },
@@ -154,7 +154,7 @@ export default createStore({
         projectImg: require("../assets/product_management_sys_cap.png"),
         projectTechnologies: [
           { technology: require("../assets/css.png") },
-          { technology: require("../assets/angular.png") },
+          { technology: require("../assets/angular_logo.png") },
           { technology: require("../assets/spring_boot.png") },
           { technology: require("../assets/mariaDB.png") },
           { technology: require("../assets/bootstrap.png") },
@@ -170,7 +170,7 @@ export default createStore({
         projectImg: require("../assets/registration-form.png"),
         projectTechnologies: [
           { technology: require("../assets/css.png") },
-          { technology: require("../assets/angular.png") },
+          { technology: require("../assets/angular_logo.png") },
           { technology: require("../assets/spring_boot.png") },
           { technology: require("../assets/mariaDB.png") },
         ],
