@@ -10,7 +10,8 @@ export default createStore({
     isResized: null,
     projects: [
       {
-        projectUrl: "",
+        projectUrl:
+          "https://www.linkedin.com/posts/hafsa-el-akhdar-92b446198_fullstack-vuejs-laravel-activity-7125510585789624320-54MH?utm_source=share&utm_medium=member_desktop",
         projectName: "Product management application",
         projectGithub:
           "https://github.com/hafsa2022/product-management-web-application-frontend",
@@ -26,7 +27,8 @@ export default createStore({
         id: 1,
       },
       {
-        projectUrl: "",
+        projectUrl:
+          "https://www.linkedin.com/posts/hafsa-el-akhdar-92b446198_codsoft-angular-bootstrap-activity-7134948433550815233-NnpR?utm_source=share&utm_medium=member_desktop",
         projectGithub:
           "https://github.com/hafsa2022/job-board-angular-laravel.git",
         projectName: " Job board",
@@ -42,6 +44,37 @@ export default createStore({
         id: 2,
       },
       {
+        projectUrl:
+          "https://www.linkedin.com/posts/hafsa-el-akhdar-92b446198_youngdevintern-youngdev-internship-activity-7154213265168867328-VrtO?utm_source=share&utm_medium=member_desktop",
+        projectName: " Registration Form",
+        projectGithub: "https://github.com/hafsa2022/registration-form",
+        projectImg: require("../assets/registration-form.png"),
+        projectTechnologies: [
+          { technology: require("../assets/angular_logo.png") },
+          { technology: require("../assets/spring_boot.png") },
+          { technology: require("../assets/mariaDB.png") },
+        ],
+        projectDescription:
+          "a simple registration form developed using Angular, Spring Boot and MariaDB. This application makes it easy to validate user information before it is added to the database.",
+        id: 3,
+      },
+      {
+        projectUrl: "",
+        projectName: " Ecommerce Website",
+        projectGithub:
+          "https://github.com/hafsa2022/ecommerce-website-frontend",
+        projectImg: require("../assets/ecommerce_image.png"),
+        projectTechnologies: [
+          { technology: require("../assets/angular_logo.png") },
+          { technology: require("../assets/spring_boot.png") },
+          { technology: require("../assets/mariaDB.png") },
+          { technology: require("../assets/jwt.png") },
+        ],
+        projectDescription:
+          " The E-Commerce Project with Spring Boot, Angular,JWT Athentication and mariaDB is an innovative web application that enables users to explore and shop for a wide range of products.",
+        id: 4,
+      },
+      {
         projectUrl: "",
         projectGithub:
           "https://github.com/hafsa2022/Site-web-pour-gerer-les-annonces",
@@ -55,7 +88,7 @@ export default createStore({
         ],
         projectDescription:
           "Newhome is website present ads or about appartements for rent and it allows us to add new ads ",
-        id: 3,
+        id: 4,
       },
 
       {
@@ -72,7 +105,7 @@ export default createStore({
         ],
         projectDescription:
           "My portfolio gives you idea about my skills, my projects, my activities and more ",
-        id: 4,
+        id: 5,
       },
       {
         projectUrl: "",
@@ -86,7 +119,7 @@ export default createStore({
         ],
         projectDescription:
           "Bautiful Gruds allows us to add, update, delete and search product",
-        id: 5,
+        id: 6,
       },
 
       {
@@ -100,7 +133,7 @@ export default createStore({
         ],
         projectDescription:
           "Simple Todo List allows us to manage tasks, add and remove tasks",
-        id: 6,
+        id: 7,
       },
 
       {
@@ -115,7 +148,7 @@ export default createStore({
         ],
         projectDescription:
           "Simple Geoportail allows us to map, search places and manipulate between layers ",
-        id: 7,
+        id: 8,
       },
       {
         projectUrl: "",
@@ -132,7 +165,7 @@ export default createStore({
         ],
         projectDescription:
           "Simple cruds allows us to add, update, delete and search employee",
-        id: 8,
+        id: 9,
       },
       {
         projectUrl: "https://hafsa2022.github.io/contact-form-html-css/",
@@ -145,7 +178,7 @@ export default createStore({
         ],
         projectDescription:
           "Simple interactive contact form allows us to send message ",
-        id: 9,
+        id: 10,
       },
       {
         projectUrl: "",
@@ -153,7 +186,6 @@ export default createStore({
         projectGithub: "https://github.com/hafsa2022/product-management-system",
         projectImg: require("../assets/product_management_sys_cap.png"),
         projectTechnologies: [
-          { technology: require("../assets/css.png") },
           { technology: require("../assets/angular_logo.png") },
           { technology: require("../assets/spring_boot.png") },
           { technology: require("../assets/mariaDB.png") },
@@ -161,21 +193,6 @@ export default createStore({
         ],
         projectDescription:
           "Simple app web for managing product using Angular and Spring Boot",
-        id: 10,
-      },
-      {
-        projectUrl: "",
-        projectName: " Registration Form",
-        projectGithub: "https://github.com/hafsa2022/registration-form",
-        projectImg: require("../assets/registration-form.png"),
-        projectTechnologies: [
-          { technology: require("../assets/css.png") },
-          { technology: require("../assets/angular_logo.png") },
-          { technology: require("../assets/spring_boot.png") },
-          { technology: require("../assets/mariaDB.png") },
-        ],
-        projectDescription:
-          "a simple registration form developed using Angular, Spring Boot and MariaDB. This application makes it easy to validate user information before it is added to the database.",
         id: 11,
       },
     ],
