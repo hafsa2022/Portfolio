@@ -27,6 +27,22 @@ export default createStore({
         id: 1,
       },
       {
+        projectUrl: "",
+        projectName: "Product management application",
+        projectGithub: "https://github.com/hafsa2022/location-car-front",
+        projectImg: require("../assets/invoice_app.png"),
+        projectTechnologies: [
+          { technology: require("../assets/vuejs.png") },
+          { technology: require("../assets/vuetify.png") },
+          { technology: require("../assets/vuex.png") },
+          { technology: require("../assets/laravel.png") },
+          { technology: require("../assets/jwt.png") },
+        ],
+        projectDescription:
+          "Web application allows us to search, create, update, uplaod and delete Invoice",
+        id: 2,
+      },
+      {
         projectUrl:
           "https://www.linkedin.com/posts/hafsa-el-akhdar-92b446198_codsoft-angular-bootstrap-activity-7134948433550815233-NnpR?utm_source=share&utm_medium=member_desktop",
         projectGithub:
@@ -41,7 +57,7 @@ export default createStore({
         ],
         projectDescription:
           "Job Dream allows us to search and get new opprtunities easy and fast ",
-        id: 2,
+        id: 3,
       },
       {
         projectUrl:
@@ -56,7 +72,7 @@ export default createStore({
         ],
         projectDescription:
           "a simple registration form developed using Angular, Spring Boot and MariaDB. This application makes it easy to validate user information before it is added to the database.",
-        id: 3,
+        id: 4,
       },
       {
         projectUrl: "",
@@ -72,7 +88,7 @@ export default createStore({
         ],
         projectDescription:
           " The E-Commerce Project with Spring Boot, Angular,JWT Athentication and mariaDB is an innovative web application that enables users to explore and shop for a wide range of products.",
-        id: 4,
+        id: 5,
       },
       {
         projectUrl: "",
@@ -88,7 +104,7 @@ export default createStore({
         ],
         projectDescription:
           "Newhome is website present ads or about appartements for rent and it allows us to add new ads ",
-        id: 4,
+        id: 6,
       },
 
       {
@@ -105,7 +121,7 @@ export default createStore({
         ],
         projectDescription:
           "My portfolio gives you idea about my skills, my projects, my activities and more ",
-        id: 5,
+        id: 7,
       },
       {
         projectUrl: "",
@@ -119,7 +135,7 @@ export default createStore({
         ],
         projectDescription:
           "Bautiful Gruds allows us to add, update, delete and search product",
-        id: 6,
+        id: 8,
       },
 
       {
@@ -133,7 +149,7 @@ export default createStore({
         ],
         projectDescription:
           "Simple Todo List allows us to manage tasks, add and remove tasks",
-        id: 7,
+        id: 9,
       },
 
       {
@@ -148,7 +164,7 @@ export default createStore({
         ],
         projectDescription:
           "Simple Geoportail allows us to map, search places and manipulate between layers ",
-        id: 8,
+        id: 10,
       },
       {
         projectUrl: "",
@@ -165,7 +181,7 @@ export default createStore({
         ],
         projectDescription:
           "Simple cruds allows us to add, update, delete and search employee",
-        id: 9,
+        id: 11,
       },
       {
         projectUrl: "https://hafsa2022.github.io/contact-form-html-css/",
@@ -178,7 +194,7 @@ export default createStore({
         ],
         projectDescription:
           "Simple interactive contact form allows us to send message ",
-        id: 10,
+        id: 12,
       },
       {
         projectUrl: "",
@@ -193,7 +209,7 @@ export default createStore({
         ],
         projectDescription:
           "Simple app web for managing product using Angular and Spring Boot",
-        id: 11,
+        id: 13,
       },
     ],
     activitiesOfTwc: [
