@@ -28,7 +28,7 @@ export default createStore({
       },
       {
         projectUrl: "",
-        projectName: "Product management application",
+        projectName: "Invoice application",
         projectGithub: "https://github.com/hafsa2022/location-car-front",
         projectImg: require("../assets/invoice_app.png"),
         projectTechnologies: [
