@@ -28,7 +28,7 @@ export default createStore({
       },
       {
         projectUrl: "",
-        projectName: "Invoice application",
+        projectName: "Invoice management application",
         projectGithub: "https://github.com/hafsa2022/location-car-front",
         projectImg: require("../assets/invoice_app.png"),
         projectTechnologies: [
@@ -39,7 +39,7 @@ export default createStore({
           { technology: require("../assets/jwt.png") },
         ],
         projectDescription:
-          "Web application allows us to search, create, update, uplaod and delete Invoice",
+          "The web application enables users to perform various operations such as searching, creating, updating, uploading, and deleting invoices. Additionally, it provides the functionality to switch between French and English languages.",
         id: 2,
       },
       {
