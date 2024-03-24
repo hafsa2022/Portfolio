@@ -1,5 +1,5 @@
 <template>
-  <v-col lg="5" md="7" sm="7" xs="7" class="">
+  <v-col lg="5" md="10" sm="10" xs="10" class="">
     <div class="" style="margin: auto">
       <v-card class="rounded-lg" elevation="3" width="100%">
         <img :src="project.projectImg" height="250" class="img-decoration" />
@@ -87,7 +87,7 @@ export default {
 }
 .img-decoration {
   transition: transform 1s ease-in-out;
-  width: 440px;
+  max-width: 100%;
 }
 .img-decoration:hover {
   transform: scale(1.1);
@@ -96,9 +96,9 @@ export default {
   height: 480px;
 }
 @media (max-width: 1500px) {
-  .img-decoration {
-    width: 340px;
-  }
+  /* .img-decoration {
+    max-width: 100%;
+  } */
   .card-decoration {
     height: 500px;
   }
