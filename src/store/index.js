@@ -10,23 +10,6 @@ export default createStore({
     isResized: null,
     projects: [
       {
-        projectUrl:
-          "https://www.linkedin.com/posts/hafsa-el-akhdar-92b446198_fullstack-vuejs-laravel-activity-7125510585789624320-54MH?utm_source=share&utm_medium=member_desktop",
-        projectName: "Product management application",
-        projectGithub:
-          "https://github.com/hafsa2022/product-management-web-application-frontend",
-        projectImg: require("../assets/product-management-page.png"),
-        projectTechnologies: [
-          { technology: require("../assets/vuejs.png") },
-          { technology: require("../assets/vuetify.png") },
-          { technology: require("../assets/vuex.png") },
-          { technology: require("../assets/laravel.png") },
-        ],
-        projectDescription:
-          "Web application allows us to search, create, update and delete product",
-        id: 1,
-      },
-      {
         projectUrl: "",
         projectName: "Invoice management application",
         projectGithub: "https://github.com/hafsa2022/location-car-front",
@@ -41,6 +24,22 @@ export default createStore({
         projectDescription:
           "The web application enables users to perform various operations such as searching, creating, updating, uploading, and deleting invoices. Additionally, it provides the functionality to switch between French and English languages.",
         id: 2,
+      },
+      {
+        projectUrl: "",
+        projectName: " Ecommerce Website",
+        projectGithub:
+          "https://github.com/hafsa2022/ecommerce-website-frontend",
+        projectImg: require("../assets/ecommerce_image.png"),
+        projectTechnologies: [
+          { technology: require("../assets/angular_logo.png") },
+          { technology: require("../assets/spring_boot.png") },
+          { technology: require("../assets/mariaDB.png") },
+          { technology: require("../assets/jwt.png") },
+        ],
+        projectDescription:
+          " The E-Commerce Project with Spring Boot, Angular,JWT Athentication and mariaDB is an innovative web application that enables users to explore and shop for a wide range of products.",
+        id: 5,
       },
       {
         projectUrl:
@@ -61,6 +60,23 @@ export default createStore({
       },
       {
         projectUrl:
+          "https://www.linkedin.com/posts/hafsa-el-akhdar-92b446198_fullstack-vuejs-laravel-activity-7125510585789624320-54MH?utm_source=share&utm_medium=member_desktop",
+        projectName: "Product management application",
+        projectGithub:
+          "https://github.com/hafsa2022/product-management-web-application-frontend",
+        projectImg: require("../assets/product-management-page.png"),
+        projectTechnologies: [
+          { technology: require("../assets/vuejs.png") },
+          { technology: require("../assets/vuetify.png") },
+          { technology: require("../assets/vuex.png") },
+          { technology: require("../assets/laravel.png") },
+        ],
+        projectDescription:
+          "Web application allows us to search, create, update and delete product",
+        id: 1,
+      },
+      {
+        projectUrl:
           "https://www.linkedin.com/posts/hafsa-el-akhdar-92b446198_youngdevintern-youngdev-internship-activity-7154213265168867328-VrtO?utm_source=share&utm_medium=member_desktop",
         projectName: " Registration Form",
         projectGithub: "https://github.com/hafsa2022/registration-form",
@@ -75,21 +91,21 @@ export default createStore({
         id: 4,
       },
       {
-        projectUrl: "",
-        projectName: " Ecommerce Website",
-        projectGithub:
-          "https://github.com/hafsa2022/ecommerce-website-frontend",
-        projectImg: require("../assets/ecommerce_image.png"),
+        projectUrl:
+          "https://drive.google.com/file/d/1DM6DiP_qTT8B3IPGBPugb3_bM0X52f-Z/view?usp=sharing",
+        projectName: " Url Shortener ",
+        projectGithub: "https://github.com/hafsa2022/url-shortener",
+        projectImg: require("../assets/url-shortener.png"),
         projectTechnologies: [
           { technology: require("../assets/angular_logo.png") },
-          { technology: require("../assets/spring_boot.png") },
-          { technology: require("../assets/mariaDB.png") },
-          { technology: require("../assets/jwt.png") },
+          { technology: require("../assets/laravel.png") },
+          { technology: require("../assets/css.png") },
         ],
         projectDescription:
-          " The E-Commerce Project with Spring Boot, Angular,JWT Athentication and mariaDB is an innovative web application that enables users to explore and shop for a wide range of products.",
-        id: 5,
+          "URL shortener web application using Laravel and Angular. The application allows users to shorten long URLs into shorter ones.",
+        id: 7,
       },
+
       {
         projectUrl: "",
         projectGithub:
@@ -196,21 +212,21 @@ export default createStore({
           "Simple interactive contact form allows us to send message ",
         id: 12,
       },
-      {
-        projectUrl: "",
-        projectName: " Product Management System",
-        projectGithub: "https://github.com/hafsa2022/product-management-system",
-        projectImg: require("../assets/product_management_sys_cap.png"),
-        projectTechnologies: [
-          { technology: require("../assets/angular_logo.png") },
-          { technology: require("../assets/spring_boot.png") },
-          { technology: require("../assets/mariaDB.png") },
-          { technology: require("../assets/bootstrap.png") },
-        ],
-        projectDescription:
-          "Simple app web for managing product using Angular and Spring Boot",
-        id: 13,
-      },
+      // {
+      //   projectUrl: "",
+      //   projectName: " Product Management System",
+      //   projectGithub: "https://github.com/hafsa2022/product-management-system",
+      //   projectImg: require("../assets/product_management_sys_cap.png"),
+      //   projectTechnologies: [
+      //     { technology: require("../assets/angular_logo.png") },
+      //     { technology: require("../assets/spring_boot.png") },
+      //     { technology: require("../assets/mariaDB.png") },
+      //     { technology: require("../assets/bootstrap.png") },
+      //   ],
+      //   projectDescription:
+      //     "Simple app web for managing product using Angular and Spring Boot",
+      //   id: 13,
+      // },
     ],
     activitiesOfTwc: [
       {
