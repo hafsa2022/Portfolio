@@ -193,7 +193,7 @@ export default {
   padding-top: 140px;
   padding-left: 70px;
 }
-@media (max-width: 1400px) {
+@media (max-width: 1500px) {
   .center-content {
     display: flex;
     justify-content: center;
@@ -211,6 +211,20 @@ export default {
   }
   .containerMax {
     height: 1100px;
+  }
+
+  .image-container {
+    padding-top: 50px;
+  }
+  .text-container {
+    padding-top: 0px;
+    padding-left: 0px;
+  }
+}
+
+@media (min-width: 1350px) {
+  .containerMax {
+    height: 700px;
   }
 
   .image-container {
