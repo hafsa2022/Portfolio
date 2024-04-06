@@ -10,7 +10,8 @@ export default createStore({
     isResized: null,
     projects: [
       {
-        projectUrl: "",
+        projectUrl:
+          "https://drive.google.com/file/d/1gRq4IS3QGc1CGuP4lUEA0WhLgKYJARH6/view?usp=sharing",
         projectName: "Invoice management application",
         projectGithub: "https://github.com/hafsa2022/location-car-front",
         projectImg: require("../assets/invoice_app.png"),
